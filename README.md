@@ -29,5 +29,9 @@
 <!-- /wp:paragraph -->
 
 <!-- /wp:paragraph -->
-<p>-... more on https://robertogrilli.home.blog/portfolio/feel-the-polyrhythm/</p>
+-BOTH "FtpR_PD_Patch.pd" and "OleoScript-Regular.ttf" needed for the correct work of the PD patch.
+<!-- wp:paragraph -->
+
+<!-- /wp:paragraph -->
+<p>... more on https://robertogrilli.home.blog/portfolio/feel-the-polyrhythm/</p>
 <!-- wp:paragraph -->
