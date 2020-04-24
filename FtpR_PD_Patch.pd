@@ -1,0 +1,2817 @@
+#N canvas 82 55 1095 489 10;
+#X obj 348 268 cnv 15 250 100 empty empty Code 20 12 0 14 -204786 -258113
+0;
+#X obj 348 38 cnv 15 380 220 empty empty Controllable_Settings 20 12
+0 14 -261682 -258113 0;
+#N canvas 644 46 709 886 Settings 0;
+#X obj -60 -1004 cnv 15 700 880 empty empty Settings 20 12 0 14 -204786
+-258113 0;
+#X obj 38 -840 cnv 15 500 700 empty empty GEM_window_UI 20 12 0 14
+-261682 -258113 0;
+#N canvas 102 46 1468 935 Metronome 0;
+#X obj 16 -187 cnv 15 600 520 empty empty Audio_feedback 20 12 0 14
+-204786 -258113 0;
+#X obj 737 -187 cnv 15 1650 1080 empty empty Metronome_UI_elements
+20 12 0 14 -261682 -258113 0;
+#X obj 888 465 circle;
+#X obj 888 340 gemhead;
+#X obj 888 416 translate 1.3 0 0 1;
+#X msg 888 306 draw line;
+#X msg 961 306 draw fill;
+#X obj 888 272 pipe 100;
+#X obj 1092 464 circle;
+#X obj 1092 339 gemhead;
+#X obj 1092 415 translate 1.3 0 0 1;
+#X msg 1092 305 draw line;
+#X msg 1165 305 draw fill;
+#X obj 1092 271 pipe 100;
+#X msg 961 103 1;
+#X msg 1000 103 0;
+#X obj 961 -2 gate 2;
+#X obj 888 121 spigot 1;
+#X msg 1158 103 1;
+#X msg 1197 103 0;
+#X obj 888 183 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 927 183 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 888 153 route 1;
+#X obj 1092 183 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1131 183 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1092 154 route 1;
+#X obj 1092 121 spigot 0;
+#X obj 994 -31 pipe 1;
+#X msg 944 64 1;
+#X msg 1027 64 2;
+#X obj 1006 273 loadbang;
+#X obj 888 367 translate -1 1 0 0;
+#X obj 888 391 translate -1.9 0 1 0;
+#X obj 1092 390 translate -1.9 0 1 0;
+#X obj 1092 366 translate 1 1 0 0;
+#X obj 888 441 scale 0.25;
+#X obj 1092 440 scale 0.25;
+#X obj 944 27 r sec;
+#X obj 1027 29 r main;
+#X obj 2144 828 circle;
+#X obj 2144 643 gemhead;
+#X obj 2144 719 translate 1.3 0 0 1;
+#X msg 2206 644 draw line;
+#X obj 2034 410 loadbang;
+#X obj 2144 694 translate -1.9 0 1 0;
+#X obj 2144 670 translate 1 1 0 0;
+#X msg 2204 774 1 0 0;
+#X msg 2155 774 0 1 0;
+#X obj 2144 744 scale 0.3;
+#X obj 1913 831 circle;
+#X obj 1913 646 gemhead;
+#X obj 1913 722 translate 1.3 0 0 1;
+#X msg 1975 647 draw line;
+#X obj 1913 697 translate -1.9 0 1 0;
+#X msg 1972 777 1 0 0;
+#X msg 1921 777 0 1 0;
+#X obj 1913 747 scale 0.3;
+#X obj 1913 673 translate -1 1 0 0;
+#X floatatom 1921 517 10 0 0 0 - - -;
+#X obj 1921 568 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1944 568 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1921 491 counter 1 2;
+#X obj 1921 543 gate 2;
+#X msg 2004 222 1;
+#X msg 2043 222 0;
+#X obj 2034 17 gate 2;
+#X obj 1931 240 spigot 1;
+#X msg 2201 222 1;
+#X msg 2238 222 0;
+#X obj 1931 302 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1970 302 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1931 272 route 1;
+#X obj 2166 302 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 2135 302 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 2135 273 route 1;
+#X obj 2135 240 spigot 0;
+#X obj 2067 -12 pipe 1;
+#X msg 2017 183 1;
+#X msg 2100 183 2;
+#X obj 2144 796 color 0 1 0;
+#X obj 1913 799 color 0 1 0;
+#X obj 2034 434 pipe 1;
+#X obj 2034 455 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 2155 521 10 0 0 0 - - -;
+#X obj 2155 572 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 2178 572 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 2155 495 counter 1 2;
+#X obj 2155 547 gate 2;
+#X obj 2317 429 f;
+#X obj 2317 457 sel 2;
+#X obj 1643 427 f;
+#X obj 1643 455 sel 2;
+#X obj 1864 777 pipe 1;
+#X obj 2099 774 pipe 1;
+#X obj 1674 367 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 2317 387 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 2317 485 pipe 1;
+#X obj 1643 485 pipe 1;
+#X obj 2017 151 r mute_sec;
+#X obj 2100 153 r mute_main;
+#X obj 1643 562 s main-sec_ON;
+#X obj 871 639 gemhead;
+#X msg 881 797 font \$1;
+#X obj 871 863 text2d;
+#X msg 881 764 open OleoScript-Regular.ttf;
+#X msg 904 837 50;
+#X msg 889 693 text \$1;
+#X obj 889 671 r BPM_text;
+#X obj 871 734 translateXYZ -3 -0.5 0;
+#X obj 984 634 loadbang;
+#X text 857 583 The following istance of the "text2d" object \; shows
+the BPM number changing in real time;
+#X obj 42 78 *~;
+#X obj 435 79 *~;
+#X obj 282 299 dac~;
+#X obj 450 -31 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 57 -35 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 282 273 +~;
+#X obj 156 195 *~;
+#X obj 435 189 *~;
+#X obj 450 163 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 171 168 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 288 204 1;
+#X obj 315 93 loadbang;
+#X obj 450 13 vline~;
+#X obj 435 41 osc~ 660;
+#X obj 42 40 osc~ 440;
+#X obj 57 9 vline~;
+#X msg 450 -10 0.25 1 \, 0 20 40;
+#X msg 57 -14 0.25 1 \, 0 20 50;
+#X obj 450 -64 r main;
+#X obj 57 -71 r sec;
+#X obj 288 180 r main-sec_ON;
+#X obj 171 106 r mute_sec;
+#X obj 450 105 r mute_main;
+#X text 84 -43 Message describe ramp up \, ramp down duration \; and
+the last number is the note sustain duration;
+#X text 1764 551 The gate assigns a role \; to each counter number
+\; it sends a bang \; to change the circle colour;
+#X text 1753 454 The counter object \; displays the state of the function
+\; (1 = ON \, 2 = Muted);
+#X text 1511 394 The float stores the state info \; of the counter
+\, if it's 2 (muted) \; un-mute it;
+#X text 114 84 Receives from "Control" subpatch;
+#X text 983 -143 Metro UI;
+#X text 941 551 BPM UI;
+#X obj 1441 -186 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1445 878 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 738 508 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1432 523 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 1052 -35 If the beats are inverted \, their visual representation
+in the UI is inverted. In this way the user can still visually follow
+the beats and associate them with his hands and the buttons position.
+;
+#X text 176 -159 The game audio outputs two metronome beats \; each
+following a polyrhythm beat.;
+#X text 225 -123 The function receives from \; the game subpatch \;
+the polyrhythm beats bangs;
+#X text 1620 311 The float objects on the sides \; are responsible
+of un-mute any beat \; whenever the user inverts them \; with the setting
+;
+#X text 1824 -107 The following circle objects displays \; when a rhythm
+beat is muted. \; They outline the visual representation in "Metro
+UI" \; They are coloured in red if the beat is muted \, \; in green
+if not.;
+#X text 1753 -19 These objects are strictly \; related to the circle
+beats \; described in "Metro UI" on the left. \; The logic when the
+beats are inverted \; is the same;
+#X text 788 -104 Both these GEM circle objects \; are the representation
+of the metronome \; they give the user a visual feedback \; of the
+two rhythms beating \;;
+#X text 971 675 Receives from "Choose main rhythm beat BPM" \; subpatch
+in 'Controls" supatch;
+#X text 53 -102 Secondary rhythm beat \; has a frequency of 440Hz;
+#X text 445 -102 Main rhythm beat \; has a frequency of 660Hz;
+#X text 761 5 Receives from the game subpatch \; the polyrhythm beats
+bangs;
+#X obj 961 -55 r Beat_Sel;
+#X obj 2034 -36 r Beat_Sel;
+#X text 1974 -163 Mute Rhythm Beats UI;
+#X text 1041 -64 Receives from "Invert Rhythm Beats" subpatch \; in
+'Controls" subpatch;
+#X text 201 151 Receives from "Mute Rhythm Beats UI" \; in this subpatch
+\;;
+#X text 531 -246 The objects in this subpatch display the audio and
+visual feedback on the polyrhythm beats to match. \; It is called "Metronome"
+because it represents two metronome separate beats that forms the polyrhythm
+;
+#X connect 3 0 31 0;
+#X connect 4 0 35 0;
+#X connect 5 0 2 0;
+#X connect 6 0 2 0;
+#X connect 7 0 5 0;
+#X connect 9 0 34 0;
+#X connect 10 0 36 0;
+#X connect 11 0 8 0;
+#X connect 12 0 8 0;
+#X connect 13 0 11 0;
+#X connect 14 0 17 1;
+#X connect 14 0 19 0;
+#X connect 15 0 17 1;
+#X connect 16 0 14 0;
+#X connect 16 1 18 0;
+#X connect 17 0 22 0;
+#X connect 18 0 15 0;
+#X connect 18 0 26 1;
+#X connect 19 0 26 1;
+#X connect 20 0 7 0;
+#X connect 20 0 6 0;
+#X connect 21 0 13 0;
+#X connect 21 0 12 0;
+#X connect 22 0 20 0;
+#X connect 22 1 21 0;
+#X connect 23 0 7 0;
+#X connect 23 0 6 0;
+#X connect 24 0 13 0;
+#X connect 24 0 12 0;
+#X connect 25 0 24 0;
+#X connect 25 1 23 0;
+#X connect 26 0 25 0;
+#X connect 27 0 16 1;
+#X connect 28 0 17 0;
+#X connect 28 0 26 0;
+#X connect 29 0 17 0;
+#X connect 29 0 26 0;
+#X connect 30 0 5 0;
+#X connect 30 0 11 0;
+#X connect 31 0 32 0;
+#X connect 32 0 4 0;
+#X connect 33 0 10 0;
+#X connect 34 0 33 0;
+#X connect 35 0 2 0;
+#X connect 36 0 8 0;
+#X connect 37 0 28 0;
+#X connect 38 0 26 0;
+#X connect 38 0 29 0;
+#X connect 40 0 45 0;
+#X connect 41 0 48 0;
+#X connect 42 0 39 0;
+#X connect 43 0 42 0;
+#X connect 43 0 52 0;
+#X connect 43 0 61 0;
+#X connect 43 0 81 0;
+#X connect 43 0 86 0;
+#X connect 44 0 41 0;
+#X connect 45 0 44 0;
+#X connect 46 0 79 1;
+#X connect 47 0 79 1;
+#X connect 48 0 79 0;
+#X connect 50 0 57 0;
+#X connect 51 0 56 0;
+#X connect 52 0 49 0;
+#X connect 53 0 51 0;
+#X connect 54 0 80 1;
+#X connect 55 0 80 1;
+#X connect 56 0 80 0;
+#X connect 57 0 53 0;
+#X connect 58 0 62 0;
+#X connect 58 0 90 1;
+#X connect 59 0 92 0;
+#X connect 60 0 54 0;
+#X connect 61 0 58 0;
+#X connect 62 0 59 0;
+#X connect 62 1 60 0;
+#X connect 63 0 66 1;
+#X connect 63 0 68 0;
+#X connect 64 0 66 1;
+#X connect 65 0 63 0;
+#X connect 65 1 67 0;
+#X connect 66 0 71 0;
+#X connect 67 0 64 0;
+#X connect 67 0 75 1;
+#X connect 68 0 75 1;
+#X connect 69 0 61 0;
+#X connect 69 0 62 1;
+#X connect 70 0 86 0;
+#X connect 70 0 87 1;
+#X connect 71 0 69 0;
+#X connect 71 1 70 0;
+#X connect 72 0 86 0;
+#X connect 72 0 87 1;
+#X connect 73 0 61 0;
+#X connect 73 0 62 1;
+#X connect 74 0 72 0;
+#X connect 74 1 73 0;
+#X connect 75 0 74 0;
+#X connect 76 0 65 1;
+#X connect 77 0 66 0;
+#X connect 77 0 75 0;
+#X connect 78 0 66 0;
+#X connect 78 0 75 0;
+#X connect 79 0 39 0;
+#X connect 80 0 49 0;
+#X connect 81 0 82 0;
+#X connect 82 0 61 0;
+#X connect 82 0 86 0;
+#X connect 83 0 87 0;
+#X connect 83 0 88 1;
+#X connect 84 0 93 0;
+#X connect 85 0 46 0;
+#X connect 86 0 83 0;
+#X connect 87 0 84 0;
+#X connect 87 1 85 0;
+#X connect 88 0 89 0;
+#X connect 89 0 86 0;
+#X connect 89 0 96 0;
+#X connect 90 0 91 0;
+#X connect 91 0 61 0;
+#X connect 91 0 97 0;
+#X connect 92 0 55 0;
+#X connect 93 0 47 0;
+#X connect 94 0 90 0;
+#X connect 95 0 88 0;
+#X connect 96 0 87 1;
+#X connect 96 0 100 0;
+#X connect 97 0 62 1;
+#X connect 97 0 100 0;
+#X connect 98 0 77 0;
+#X connect 99 0 78 0;
+#X connect 101 0 108 0;
+#X connect 102 0 103 0;
+#X connect 104 0 102 0;
+#X connect 105 0 103 1;
+#X connect 106 0 103 0;
+#X connect 107 0 106 0;
+#X connect 108 0 103 0;
+#X connect 109 0 106 0;
+#X connect 109 0 104 0;
+#X connect 109 0 105 0;
+#X connect 111 0 117 0;
+#X connect 112 0 118 0;
+#X connect 114 0 127 0;
+#X connect 115 0 128 0;
+#X connect 116 0 113 0;
+#X connect 116 0 113 1;
+#X connect 117 0 116 0;
+#X connect 118 0 116 1;
+#X connect 119 0 118 1;
+#X connect 120 0 117 1;
+#X connect 121 0 120 0;
+#X connect 121 0 119 0;
+#X connect 122 0 120 0;
+#X connect 122 0 119 0;
+#X connect 123 0 112 1;
+#X connect 124 0 112 0;
+#X connect 125 0 111 0;
+#X connect 126 0 111 1;
+#X connect 127 0 123 0;
+#X connect 128 0 126 0;
+#X connect 129 0 114 0;
+#X connect 130 0 115 0;
+#X connect 131 0 121 0;
+#X connect 132 0 120 0;
+#X connect 133 0 119 0;
+#X connect 141 0 142 0;
+#X connect 143 0 144 0;
+#X connect 156 0 27 0;
+#X connect 156 0 16 0;
+#X connect 157 0 76 0;
+#X connect 157 0 65 0;
+#X connect 157 0 94 0;
+#X connect 157 0 95 0;
+#X restore 266 -881 pd Metronome;
+#N canvas 67 72 1185 884 Polyrhythm_Selection 0;
+#X obj 482 59 cnv 15 1500 750 empty empty Choose_Polyrhythm_UI_elements
+20 12 0 14 -261682 -258113 0;
+#X obj 25 -318 cnv 15 950 350 empty empty Polyrhythms 20 12 0 14 -204786
+-258113 0;
+#X obj 516 217 gemhead;
+#X msg 526 375 font \$1;
+#X obj 516 441 text2d;
+#X obj 616 188 loadbang;
+#X msg 526 342 open OleoScript-Regular.ttf;
+#X msg 549 415 50;
+#X obj 723 232 gemhead;
+#X msg 733 390 font \$1;
+#X obj 723 456 text2d;
+#X obj 833 203 loadbang;
+#X msg 733 357 open OleoScript-Regular.ttf;
+#X msg 756 430 50;
+#X obj 1003 215 gemhead;
+#X msg 1013 373 font \$1;
+#X obj 1003 439 text2d;
+#X obj 1113 186 loadbang;
+#X msg 1013 340 open OleoScript-Regular.ttf;
+#X msg 1036 413 50;
+#X obj 1220 219 gemhead;
+#X msg 1230 377 font \$1;
+#X obj 1220 443 text2d;
+#X obj 1330 190 loadbang;
+#X msg 1230 344 open OleoScript-Regular.ttf;
+#X msg 1253 417 50;
+#X obj 505 526 gemhead;
+#X msg 515 684 font \$1;
+#X obj 505 750 text2d;
+#X obj 605 497 loadbang;
+#X msg 515 651 open OleoScript-Regular.ttf;
+#X msg 538 724 50;
+#X obj 725 529 gemhead;
+#X msg 735 687 font \$1;
+#X obj 725 753 text2d;
+#X obj 835 500 loadbang;
+#X msg 735 654 open OleoScript-Regular.ttf;
+#X msg 758 727 50;
+#X obj 977 525 gemhead;
+#X msg 987 683 font \$1;
+#X obj 977 749 text2d;
+#X obj 1087 496 loadbang;
+#X msg 987 650 open OleoScript-Regular.ttf;
+#X msg 1010 723 50;
+#X obj 1206 530 gemhead;
+#X msg 1216 688 font \$1;
+#X obj 1206 754 text2d;
+#X obj 1316 501 loadbang;
+#X msg 1216 655 open OleoScript-Regular.ttf;
+#X msg 1239 728 50;
+#X obj 1540 232 gemhead;
+#X obj 1540 441 square;
+#X msg 1549 413 draw line;
+#X obj 1540 378 scale 0.19 3 2 1;
+#X obj 1540 326 translateXYZ -4.5 1.2 0;
+#X obj 516 312 translateXYZ 3 1.3 0;
+#X obj 1003 310 translateXYZ 3 -0.43 0;
+#X obj 1220 314 translateXYZ 3 -1.3 0;
+#X obj 505 621 translateXYZ 4.5 1.3 0;
+#X obj 977 620 translateXYZ 4.5 -0.43 0;
+#X msg 1580 262 0 3 1.2;
+#X msg 1661 262 0 3 0.35;
+#X msg 1581 288 0 4.5 1.2;
+#X msg 1661 288 0 4.5 0.35;
+#X msg 1742 288 0 4.5 -0.5;
+#X msg 1822 288 0 4.5 -1.35;
+#X msg 1742 262 0 3 -0.5;
+#X msg 1822 262 0 3 -1.35;
+#X obj 723 327 translateXYZ 3 0.43 0;
+#X obj 725 624 translateXYZ 4.5 0.43 0;
+#X obj 1541 535 gemhead;
+#X msg 1551 693 font \$1;
+#X obj 1541 759 text2d;
+#X obj 1626 509 loadbang;
+#X msg 1551 660 open OleoScript-Regular.ttf;
+#X obj 1541 630 translateXYZ 0 -2.75 0;
+#X msg 1574 733 75;
+#X obj 638 -169 gate 8;
+#X obj 638 -269 r PolyRatio_sel;
+#X obj 1625 149 r PolyRatio_drawSel;
+#X obj 1625 201 gate 8;
+#X obj 1647 173 pipe 1;
+#X obj 567 222 pipe 1;
+#X obj 1549 201 loadbang;
+#X msg 535 262 text 2 : 3;
+#X msg 741 276 text 3 : 4;
+#X msg 1021 259 text 4 : 5;
+#X msg 1238 263 text 3 : 5;
+#X msg 743 573 text 4 : 7;
+#X msg 995 569 text 4 : 9;
+#X msg 1224 574 text 7 : 8;
+#X msg 523 570 text 5 : 7;
+#X obj 1206 625 translateXYZ 4.5 -1.3 0;
+#X obj 36 -151 * 3;
+#X obj 36 -131 / 2;
+#X obj 67 -151 * 4;
+#X obj 67 -131 / 3;
+#X obj 99 -151 * 5;
+#X obj 99 -131 / 4;
+#X obj 133 -131 / 3;
+#X obj 133 -151 * 5;
+#X obj 198 -131 / 4;
+#X obj 198 -151 * 7;
+#X obj 232 -151 * 9;
+#X obj 232 -131 / 4;
+#X obj 266 -151 * 8;
+#X obj 266 -131 / 7;
+#X obj 167 -151 * 7;
+#X obj 167 -131 / 5;
+#X floatatom 294 -87 5 0 0 0 - - -;
+#X text 35 -170 3:2;
+#X text 67 -170 4:3;
+#X text 99 -170 5:4;
+#X text 133 -169 5:3;
+#X text 167 -168 5:2;
+#X text 198 -169 7:4;
+#X text 232 -169 9:4;
+#X text 266 -168 8:7;
+#X obj 142 -78 s BPM_sec;
+#X obj 546 -269 r BPM_main;
+#X text 1699 176 This GEM square object gives the user \; a real-time
+visual feedback \; of which polyrhythm he is choosing \; while rotating
+the potentiometer;
+#X text 813 106 All the following istances of the "text2d" object below
+\, \; render on the startup the text in the GEM UI window.;
+#X obj 1457 794 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1457 59 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1461 465 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1967 480 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 689 -170 The gate outputs also change the text \; of the object
+at the bottom of the UI \; that represent the current polyrhythm playing.
+;
+#X text 554 -307 Receives from "Choose Polyrhythm" subpatch \; in "Controls"
+subpatch;
+#X text 1524 98 Receives from "Choose Polyrhythm" subpatch \; in "Controls"
+subpatch;
+#X text 1635 547 Current playing polyrhythm \; Displayed on the bottom
+of the UI. \; It receives the text to render depending on \; the polyrhythm
+chosen by the user.;
+#X text 221 -259 The gate receives on the left inlet \; the message
+that tells which outlet to open (each is associated with a polyrhythm).
+\; On the right it receives the bang \; (when the user confirm with
+"c_Button" click) \; and the information on current bpm of main rhythm
+beat.;
+#X text 50 -58 The input number of these operation \; is the BPM of
+the main beat. \; The result represents the BPM \; of the secondary
+beat. \; The number is sent to control the metro object \; in the game
+subpatches:"1_Button" and "2_Buttons".;
+#X connect 2 0 55 0;
+#X connect 3 0 4 0;
+#X connect 5 0 6 0;
+#X connect 5 0 7 0;
+#X connect 5 0 82 0;
+#X connect 6 0 3 0;
+#X connect 7 0 4 1;
+#X connect 8 0 68 0;
+#X connect 9 0 10 0;
+#X connect 11 0 12 0;
+#X connect 11 0 85 0;
+#X connect 11 0 13 0;
+#X connect 12 0 9 0;
+#X connect 13 0 10 1;
+#X connect 14 0 56 0;
+#X connect 15 0 16 0;
+#X connect 17 0 18 0;
+#X connect 17 0 86 0;
+#X connect 17 0 19 0;
+#X connect 18 0 15 0;
+#X connect 19 0 16 1;
+#X connect 20 0 57 0;
+#X connect 21 0 22 0;
+#X connect 23 0 24 0;
+#X connect 23 0 87 0;
+#X connect 23 0 25 0;
+#X connect 24 0 21 0;
+#X connect 25 0 22 1;
+#X connect 26 0 58 0;
+#X connect 27 0 28 0;
+#X connect 29 0 30 0;
+#X connect 29 0 91 0;
+#X connect 29 0 31 0;
+#X connect 30 0 27 0;
+#X connect 31 0 28 1;
+#X connect 32 0 69 0;
+#X connect 33 0 34 0;
+#X connect 35 0 36 0;
+#X connect 35 0 88 0;
+#X connect 35 0 37 0;
+#X connect 36 0 33 0;
+#X connect 37 0 34 1;
+#X connect 38 0 59 0;
+#X connect 39 0 40 0;
+#X connect 41 0 42 0;
+#X connect 41 0 89 0;
+#X connect 41 0 43 0;
+#X connect 42 0 39 0;
+#X connect 43 0 40 1;
+#X connect 44 0 92 0;
+#X connect 45 0 46 0;
+#X connect 47 0 48 0;
+#X connect 47 0 90 0;
+#X connect 47 0 49 0;
+#X connect 48 0 45 0;
+#X connect 49 0 46 1;
+#X connect 50 0 54 0;
+#X connect 52 0 51 0;
+#X connect 53 0 51 0;
+#X connect 54 0 53 0;
+#X connect 55 0 4 0;
+#X connect 56 0 16 0;
+#X connect 57 0 22 0;
+#X connect 58 0 28 0;
+#X connect 59 0 40 0;
+#X connect 60 0 54 0;
+#X connect 61 0 54 0;
+#X connect 62 0 54 0;
+#X connect 63 0 54 0;
+#X connect 64 0 54 0;
+#X connect 65 0 54 0;
+#X connect 66 0 54 0;
+#X connect 67 0 54 0;
+#X connect 68 0 10 0;
+#X connect 69 0 34 0;
+#X connect 70 0 75 0;
+#X connect 71 0 72 0;
+#X connect 73 0 74 0;
+#X connect 73 0 76 0;
+#X connect 74 0 71 0;
+#X connect 75 0 72 0;
+#X connect 76 0 72 1;
+#X connect 77 0 84 0;
+#X connect 77 0 93 0;
+#X connect 77 1 85 0;
+#X connect 77 1 95 0;
+#X connect 77 2 86 0;
+#X connect 77 2 97 0;
+#X connect 77 3 87 0;
+#X connect 77 3 100 0;
+#X connect 77 4 91 0;
+#X connect 77 4 107 0;
+#X connect 77 5 88 0;
+#X connect 77 5 102 0;
+#X connect 77 6 89 0;
+#X connect 77 6 103 0;
+#X connect 77 7 90 0;
+#X connect 77 7 105 0;
+#X connect 78 0 77 0;
+#X connect 79 0 80 0;
+#X connect 79 0 81 0;
+#X connect 80 0 60 0;
+#X connect 80 1 61 0;
+#X connect 80 2 66 0;
+#X connect 80 3 67 0;
+#X connect 80 4 62 0;
+#X connect 80 5 63 0;
+#X connect 80 6 64 0;
+#X connect 80 7 65 0;
+#X connect 81 0 80 1;
+#X connect 82 0 84 0;
+#X connect 83 0 52 0;
+#X connect 84 0 4 0;
+#X connect 84 0 72 0;
+#X connect 85 0 10 0;
+#X connect 85 0 72 0;
+#X connect 86 0 16 0;
+#X connect 86 0 72 0;
+#X connect 87 0 22 0;
+#X connect 87 0 72 0;
+#X connect 88 0 34 0;
+#X connect 88 0 72 0;
+#X connect 89 0 40 0;
+#X connect 89 0 72 0;
+#X connect 90 0 46 0;
+#X connect 90 0 72 0;
+#X connect 91 0 28 0;
+#X connect 91 0 72 0;
+#X connect 92 0 46 0;
+#X connect 93 0 94 0;
+#X connect 94 0 109 0;
+#X connect 94 0 118 0;
+#X connect 95 0 96 0;
+#X connect 96 0 109 0;
+#X connect 96 0 118 0;
+#X connect 97 0 98 0;
+#X connect 98 0 109 0;
+#X connect 98 0 118 0;
+#X connect 99 0 109 0;
+#X connect 99 0 118 0;
+#X connect 100 0 99 0;
+#X connect 101 0 109 0;
+#X connect 101 0 118 0;
+#X connect 102 0 101 0;
+#X connect 103 0 104 0;
+#X connect 104 0 109 0;
+#X connect 104 0 118 0;
+#X connect 105 0 106 0;
+#X connect 106 0 109 0;
+#X connect 106 0 118 0;
+#X connect 107 0 108 0;
+#X connect 108 0 109 0;
+#X connect 108 0 118 0;
+#X connect 119 0 77 1;
+#X connect 123 0 122 0;
+#X connect 124 0 125 0;
+#X restore 104 -881 pd Polyrhythm_Selection;
+#X obj 314 -520 gemwin;
+#X msg 314 -559 create \, 1;
+#X msg 77 -546 cursor \$1;
+#X obj 77 -569 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 1
+1;
+#X msg 381 -560 0 \, destroy;
+#X msg 88 -663 4;
+#X obj 76 -753 loadbang;
+#X obj 76 -727 pipe 5;
+#X msg 120 -662 destroy \, FSAA \$1;
+#X msg 85 -620 destroy \, dimen 1280 720;
+#X obj 381 -625 r Close_GEM;
+#X obj 314 -625 r Start;
+#X obj 381 -594 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 314 -594 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 99 -917 The subpatches store the information for each setting
+;
+#N canvas 539 111 1016 816 Accuracy_Points 0;
+#X obj 2 -71 cnv 15 1000 800 empty empty Accuracy_Points_UI_elements
+20 12 0 14 -261682 -258113 0;
+#X obj 35 64 gemhead;
+#X obj 35 20 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X obj 35 696 square;
+#X obj 215 64 gemhead;
+#X obj 215 19 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X obj 215 253 square;
+#X msg 224 225 draw line;
+#X msg 226 167 1 0 0;
+#X obj 402 65 gemhead;
+#X obj 402 20 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X obj 402 254 square;
+#X msg 411 226 draw line;
+#X msg 413 168 1 0 0;
+#X obj 587 68 gemhead;
+#X obj 587 23 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X obj 587 257 square;
+#X msg 596 229 draw line;
+#X msg 598 171 1 0 0;
+#X obj 765 70 gemhead;
+#X obj 765 25 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X obj 765 259 square;
+#X msg 774 231 draw line;
+#X msg 776 173 1 0 0;
+#X msg 275 168 0 1 0;
+#X msg 461 168 0 1 0;
+#X msg 645 171 0 1 0;
+#X msg 826 173 0 1 0;
+#X obj 149 609 hsl 128 15 0 1 0 1 empty empty R 12 8 1 12 -261689 -1
+-1 12018 1;
+#X obj 149 629 hsl 128 15 0 1 0 1 empty empty G 12 8 1 12 -225271 -1
+-1 9 1;
+#X obj 149 649 hsl 128 15 0 1 0 1 empty empty B 12 8 1 12 -228992 -1
+-1 0 1;
+#X obj 108 531 hsl 128 15 0 1000 0 0 empty empty amount 6 8 1 12 -233017
+-1 -1 12687 1;
+#X floatatom 105 574 5 0 0 0 - - -;
+#X obj 108 459 hsl 128 15 0 1000 0 0 empty empty amount 6 8 1 12 -233017
+-1 -1 12687 1;
+#X floatatom 105 502 5 0 0 0 - - -;
+#X obj 480 299 loadbang;
+#X obj 35 141 scale 1;
+#X obj 215 140 scale 1.188;
+#X obj 402 141 scale 1.375;
+#X obj 587 144 scale 1.563;
+#X obj 765 146 scale 1.75;
+#X obj 215 194 color 1 0 0;
+#X obj 402 195 color 1 0 0;
+#X obj 587 198 color 1 0 0;
+#X obj 765 200 color 1 0 0;
+#X obj 35 675 colorRGB 1 0 0;
+#X obj 173 425 r PointCol;
+#X obj 105 480 maxlib/scale 100 1050 0 1 0;
+#X obj 104 64 r PointReset;
+#X msg 104 140 0 0.95 0 0;
+#X obj 105 552 maxlib/scale 1000 300 0 0.5 0;
+#X obj 275 31 r Points;
+#X obj 275 64 sel 1;
+#X obj 461 65 sel 2;
+#X obj 645 68 sel 3;
+#X obj 826 70 sel 4;
+#X obj 893 70 sel 5;
+#X obj 893 101 s PointReset;
+#X text 82 377 UI real-time visual feedback \; for rhythm accuracy
+\;;
+#X text 290 467 Receives a number that is scaled to be used in \; the
+GEM "colorRGB" object.;
+#X text 66 31 Receives from \; the main game subpatches;
+#X text 652 -20 After 5 consecutive in a row \, without errors \, he
+earns a cumulative point that demonstrates his good understanding of
+the current polyrhythm \, and the accuracy points gets reset.;
+#X obj 2 339 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 987 354 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 262 420 The square on the centre of the GEM UI window \; changes
+gradually colour from red to green \; based on the player accuracy.
+;
+#X text 262 -58 These square object represent the "Accuracy Points":
+the consistency over time of the player rhythm accuracy. \; The more
+the player keeps matching the polyrhythm \, the more the squared lines
+colour will change from red to green.;
+#X connect 1 0 36 0;
+#X connect 2 0 1 0;
+#X connect 4 0 37 0;
+#X connect 5 0 4 0;
+#X connect 7 0 6 0;
+#X connect 8 0 41 1;
+#X connect 9 0 38 0;
+#X connect 10 0 9 0;
+#X connect 12 0 11 0;
+#X connect 13 0 42 1;
+#X connect 14 0 39 0;
+#X connect 15 0 14 0;
+#X connect 17 0 16 0;
+#X connect 18 0 43 1;
+#X connect 19 0 40 0;
+#X connect 20 0 19 0;
+#X connect 22 0 21 0;
+#X connect 23 0 44 1;
+#X connect 24 0 41 1;
+#X connect 25 0 42 1;
+#X connect 26 0 43 1;
+#X connect 27 0 44 1;
+#X connect 28 0 45 1;
+#X connect 29 0 45 2;
+#X connect 30 0 45 3;
+#X connect 31 0 50 0;
+#X connect 32 0 29 0;
+#X connect 33 0 47 0;
+#X connect 34 0 28 0;
+#X connect 35 0 7 0;
+#X connect 35 0 12 0;
+#X connect 35 0 17 0;
+#X connect 35 0 22 0;
+#X connect 36 0 45 0;
+#X connect 37 0 41 0;
+#X connect 38 0 42 0;
+#X connect 39 0 43 0;
+#X connect 40 0 44 0;
+#X connect 41 0 6 0;
+#X connect 42 0 11 0;
+#X connect 43 0 16 0;
+#X connect 44 0 21 0;
+#X connect 45 0 3 0;
+#X connect 46 0 33 0;
+#X connect 46 0 31 0;
+#X connect 47 0 34 0;
+#X connect 48 0 49 0;
+#X connect 48 0 8 0;
+#X connect 48 0 13 0;
+#X connect 48 0 18 0;
+#X connect 48 0 23 0;
+#X connect 49 0 45 0;
+#X connect 50 0 32 0;
+#X connect 51 0 52 0;
+#X connect 51 0 53 0;
+#X connect 51 0 54 0;
+#X connect 51 0 55 0;
+#X connect 51 0 56 0;
+#X connect 52 0 24 0;
+#X connect 53 0 25 0;
+#X connect 54 0 26 0;
+#X connect 55 0 27 0;
+#X connect 56 0 57 0;
+#X connect 62 0 63 0;
+#X restore 359 -881 pd Accuracy_Points;
+#N canvas 80 129 1353 766 Buttons_Routing 0;
+#X obj 227 43 cnv 15 900 350 empty empty Invert_Beats_UI_elements 20
+12 0 14 -261682 -258113 0;
+#X obj 376 130 gemhead;
+#X msg 386 288 font \$1;
+#X obj 376 354 text2d;
+#X obj 435 130 loadbang;
+#X msg 386 255 open OleoScript-Regular.ttf;
+#X msg 409 328 50;
+#X obj 376 225 translateXYZ -3 1 0;
+#X obj 699 156 gemhead;
+#X obj 699 365 square;
+#X msg 708 337 draw line;
+#X obj 708 125 loadbang;
+#X obj 770 190 gate 2;
+#X obj 817 173 pipe 1;
+#X obj 699 303 scale 0.19 2.2 1.5 1;
+#X msg 716 218 0 -3.57 0.9;
+#X msg 799 218 0 -2.42 0.9;
+#X obj 699 250 translateXYZ -3.57 0.9 0;
+#X msg 394 175 text b:a - a:b;
+#X obj 227 -344 cnv 15 900 350 empty empty Invert_Rhythm_Beats 20 12
+0 14 -204786 -258113 0;
+#X msg 523 -135 1;
+#X msg 562 -135 0;
+#X obj 523 -289 gate 2;
+#X obj 454 -117 spigot 1;
+#X msg 713 -135 1;
+#X msg 752 -135 0;
+#X msg 534 -189 1;
+#X obj 608 -233 r b_Button;
+#X msg 573 -189 2;
+#X obj 454 -55 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 493 -55 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 454 -85 route 1;
+#X obj 647 -55 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 686 -55 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 647 -84 route 1;
+#X obj 647 -117 spigot 0;
+#X obj 534 -233 r a_Button;
+#X obj 507 -18 s pl_main;
+#X obj 584 -18 s pl_sec;
+#X obj -184 -343 cnv 15 400 350 empty empty MIDI_signal_acquisition
+20 12 0 14 -204800 -258113 0;
+#X obj -151 -242 notein 1;
+#X obj -151 -52 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -151 -105 counter 0 1;
+#X obj -151 -130 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -151 -80 sel 1;
+#X obj -151 -157 sel 1;
+#X obj -151 -185 == 43;
+#X obj -151 -17 send c_Button;
+#X obj 31 -17 send b_Button;
+#X obj -60 -184 == 36;
+#X obj -60 -52 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -60 -104 counter 0 1;
+#X obj -60 -130 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -60 -79 sel 1;
+#X obj -60 -157 sel 1;
+#X obj 31 -52 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 31 -104 counter 0 1;
+#X obj 31 -130 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 31 -79 sel 1;
+#X obj 31 -157 sel 1;
+#X obj 31 -184 == 39;
+#X obj -60 -17 send a_Button;
+#X text -153 -314 Receives the midi signal from the microprocessor.
+\; The if statement extract the midi note number and send each in a
+different object \; then the counter and sel objects collect the information
+relative to the midi "note on" only;
+#X text 705 -110 Spigot depending on the message received \; allow
+the two buttons messages \; to go through one of the two route objects.
+\; So \, one route object has the outputs inverted compared to the
+other one.;
+#X text 288 90 The following istance of the "text2d" object \; render
+on the startup the text in the GEM UI window.;
+#X obj 636 378 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 636 44 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 699 64 This GEM square object gives the user \; a real-time
+visual feedback \; of which option he is choosing \; while rotating
+the potentiometer;
+#X text 878 135 Receives from "Invert Rhythm Beats" \; subpatch in
+'Controls" supatch;
+#X text 610 -338 By default "a_Button" and "b_Button" are assigned
+\; to match the main beat and the secondary one \; respectively. (in
+3:2 \, 3 is main and 2 is secondary). \; If the function receive a
+different message from the "Invert Rhythm Beats" subpatch in "Controls"
+subpatch \, they would be inverted: the main assigned to "b_Button"
+and the secondary to "a_Button".;
+#X obj 770 143 r Beat_drawSel;
+#X obj 523 -337 r Beat_Sel;
+#X connect 1 0 7 0;
+#X connect 2 0 3 0;
+#X connect 4 0 5 0;
+#X connect 4 0 6 0;
+#X connect 4 0 18 0;
+#X connect 5 0 2 0;
+#X connect 6 0 3 1;
+#X connect 7 0 3 0;
+#X connect 8 0 17 0;
+#X connect 10 0 9 0;
+#X connect 11 0 10 0;
+#X connect 12 0 15 0;
+#X connect 12 1 16 0;
+#X connect 13 0 12 1;
+#X connect 14 0 9 0;
+#X connect 15 0 17 0;
+#X connect 16 0 17 0;
+#X connect 17 0 14 0;
+#X connect 18 0 3 0;
+#X connect 20 0 23 1;
+#X connect 20 0 25 0;
+#X connect 21 0 23 1;
+#X connect 22 0 20 0;
+#X connect 22 1 24 0;
+#X connect 23 0 31 0;
+#X connect 24 0 21 0;
+#X connect 24 0 35 1;
+#X connect 25 0 35 1;
+#X connect 26 0 23 0;
+#X connect 26 0 35 0;
+#X connect 27 0 28 0;
+#X connect 28 0 23 0;
+#X connect 28 0 35 0;
+#X connect 29 0 37 0;
+#X connect 30 0 38 0;
+#X connect 31 0 29 0;
+#X connect 31 1 30 0;
+#X connect 32 0 37 0;
+#X connect 33 0 38 0;
+#X connect 34 0 33 0;
+#X connect 34 1 32 0;
+#X connect 35 0 34 0;
+#X connect 36 0 26 0;
+#X connect 40 0 46 0;
+#X connect 40 0 49 0;
+#X connect 40 0 60 0;
+#X connect 41 0 47 0;
+#X connect 42 0 44 0;
+#X connect 43 0 42 0;
+#X connect 44 0 41 0;
+#X connect 45 0 43 0;
+#X connect 46 0 45 0;
+#X connect 49 0 54 0;
+#X connect 50 0 61 0;
+#X connect 51 0 53 0;
+#X connect 52 0 51 0;
+#X connect 53 0 50 0;
+#X connect 54 0 52 0;
+#X connect 55 0 48 0;
+#X connect 56 0 58 0;
+#X connect 57 0 56 0;
+#X connect 58 0 55 0;
+#X connect 59 0 57 0;
+#X connect 60 0 59 0;
+#X connect 66 0 65 0;
+#X connect 70 0 12 0;
+#X connect 70 0 13 0;
+#X connect 71 0 22 0;
+#X connect 71 0 22 1;
+#X restore -26 -881 pd Buttons_Routing;
+#N canvas 61 82 1413 616 Comulative_Points 0;
+#X obj -24 -286 cnv 15 1400 600 empty empty Cumulative_Points_UI_elements
+20 12 0 14 -261682 -258113 0;
+#X obj 28 280 circle;
+#X obj 29 55 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X msg 46 1 draw line;
+#X obj 213 280 circle;
+#X obj 214 57 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X msg 231 1 draw line;
+#X obj 408 280 circle;
+#X obj 409 53 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X msg 426 1 draw line;
+#X obj 593 280 circle;
+#X obj 594 49 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X msg 611 1 draw line;
+#X obj 784 280 circle;
+#X obj 785 51 tgl 15 1 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X msg 802 1 draw line;
+#X obj 46 -24 loadbang;
+#X obj 28 256 scale 0.3;
+#X obj 28 212 translate 1.3 0 0 1;
+#X obj 28 172 translate 2 0 1 0;
+#X obj 29 128 translate -2 1 0 0;
+#X obj 214 130 translate -1 1 0 0;
+#X obj 213 174 translate 2 0 1 0;
+#X obj 213 214 translate 1.3 0 0 1;
+#X obj 213 258 scale 0.3;
+#X obj 409 126 translate 0 1 0 0;
+#X obj 408 170 translate 2 0 1 0;
+#X obj 408 210 translate 1.3 0 0 1;
+#X obj 408 254 scale 0.3;
+#X obj 594 122 translate 1 1 0 0;
+#X obj 593 166 translate 2 0 1 0;
+#X obj 593 206 translate 1.3 0 0 1;
+#X obj 593 250 scale 0.3;
+#X obj 785 124 translate 2 1 0 0;
+#X obj 784 168 translate 2 0 1 0;
+#X obj 784 208 translate 1.3 0 0 1;
+#X obj 784 252 scale 0.3;
+#X msg 119 1 draw fill;
+#X msg 298 1 draw fill;
+#X msg 494 1 draw fill;
+#X msg 682 1 draw fill;
+#X floatatom 263 -161 10 0 0 0 - - -;
+#X obj 263 -188 counter 1 5;
+#X obj 263 -137 gate 5;
+#X obj 296 -210 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 296 -233 pipe 1;
+#X obj 1139 -177 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1
+0 1;
+#X obj 1139 -132 metro;
+#X obj 1139 -224 sel 5;
+#X obj 1139 -200 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 263 -221 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 347 -233 loadbang;
+#X obj 263 -258 r TotPoints;
+#X text 1182 -221 When Counter reaches max;
+#X msg 1176 176 font \$1;
+#X obj 1166 242 text2d;
+#X msg 1176 143 open OleoScript-Regular.ttf;
+#X obj 1279 13 loadbang;
+#X obj 1166 -9 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X msg 1184 72 text Bravo!;
+#X msg 1199 216 200;
+#X obj 1166 113 translateXYZ 0 3.1 0;
+#X obj 785 85 gemhead;
+#X obj 594 84 gemhead;
+#X obj 409 87 gemhead;
+#X obj 214 91 gemhead;
+#X obj 29 89 gemhead;
+#X obj 1074 -59 s P_on-off;
+#X obj 29 28 r P_on-off;
+#X obj 1235 -7 pipe 1;
+#X msg 1206 -6 0;
+#X text 1177 -30 End game text line;
+#X obj 1139 -83 sel 999;
+#X obj 1139 -105 counter 1000;
+#X obj 1166 20 gemhead;
+#X text -16 -228 These obects represent the comulative points \; obtained
+after 5 accuracy points in a row;
+#X text 1113 -245 Reset Comulative Points;
+#X obj 910 -286 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 914 299 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 930 -216 After 5 comulative points \; the function shows the
+text line \; for 1 second \, and then \; resets the points;
+#X connect 2 0 66 0;
+#X connect 3 0 1 0;
+#X connect 5 0 65 0;
+#X connect 6 0 4 0;
+#X connect 8 0 64 0;
+#X connect 9 0 7 0;
+#X connect 11 0 63 0;
+#X connect 12 0 10 0;
+#X connect 14 0 62 0;
+#X connect 15 0 13 0;
+#X connect 16 0 3 0;
+#X connect 16 0 6 0;
+#X connect 16 0 9 0;
+#X connect 16 0 12 0;
+#X connect 16 0 15 0;
+#X connect 17 0 1 0;
+#X connect 18 0 17 0;
+#X connect 19 0 18 0;
+#X connect 20 0 19 0;
+#X connect 21 0 22 0;
+#X connect 22 0 23 0;
+#X connect 23 0 24 0;
+#X connect 24 0 4 0;
+#X connect 25 0 26 0;
+#X connect 26 0 27 0;
+#X connect 27 0 28 0;
+#X connect 28 0 7 0;
+#X connect 29 0 30 0;
+#X connect 30 0 31 0;
+#X connect 31 0 32 0;
+#X connect 32 0 10 0;
+#X connect 33 0 34 0;
+#X connect 34 0 35 0;
+#X connect 35 0 36 0;
+#X connect 36 0 13 0;
+#X connect 37 0 1 0;
+#X connect 38 0 4 0;
+#X connect 39 0 7 0;
+#X connect 40 0 10 0;
+#X connect 41 0 43 0;
+#X connect 42 0 41 0;
+#X connect 42 0 48 0;
+#X connect 43 0 37 0;
+#X connect 43 1 38 0;
+#X connect 43 2 39 0;
+#X connect 43 3 40 0;
+#X connect 44 0 43 1;
+#X connect 45 0 44 0;
+#X connect 46 0 47 0;
+#X connect 47 0 73 0;
+#X connect 48 0 49 0;
+#X connect 49 0 46 0;
+#X connect 49 0 58 0;
+#X connect 49 0 3 0;
+#X connect 49 0 6 0;
+#X connect 49 0 9 0;
+#X connect 49 0 12 0;
+#X connect 49 0 67 0;
+#X connect 50 0 42 0;
+#X connect 51 0 42 2;
+#X connect 52 0 45 0;
+#X connect 52 0 50 0;
+#X connect 54 0 55 0;
+#X connect 56 0 54 0;
+#X connect 57 0 59 0;
+#X connect 57 0 56 0;
+#X connect 57 0 60 0;
+#X connect 57 0 69 0;
+#X connect 58 0 74 0;
+#X connect 59 0 55 0;
+#X connect 60 0 55 1;
+#X connect 61 0 55 0;
+#X connect 62 0 33 0;
+#X connect 63 0 29 0;
+#X connect 64 0 25 0;
+#X connect 65 0 21 0;
+#X connect 66 0 20 0;
+#X connect 68 0 2 0;
+#X connect 68 0 5 0;
+#X connect 68 0 8 0;
+#X connect 68 0 11 0;
+#X connect 68 0 14 0;
+#X connect 69 0 70 0;
+#X connect 70 0 58 0;
+#X connect 72 0 67 0;
+#X connect 73 0 72 0;
+#X connect 73 2 46 0;
+#X connect 73 2 58 0;
+#X connect 74 0 61 0;
+#X connect 77 0 78 0;
+#X restore 484 -882 pd Comulative_Points;
+#X text 157 -746 these messages set the window settings on the startup
+\; create window with specific size \, \; resolution and start rendering
+;
+#X text -45 -973 This subpatch gather the information on both the settings
+\; functions logic and their graphic representation \; for the UI on
+the GEM window;
+#X msg 103 -698 title Feel_the_(poly)Rhythm;
+#X obj 123 -403 gemhead;
+#X msg 133 -245 font \$1;
+#X obj 123 -179 text2d;
+#X msg 133 -278 open OleoScript-Regular.ttf;
+#X obj 189 -410 loadbang;
+#X text 191 -813 gemwin object represents the GEM window \; that displays
+all the GEM objects for the UI. \; It gets opened when the user start
+the game \, \; and gets closed when the user stops it;
+#X obj 141 -378 r Stop_2;
+#X obj 229 -378 r Stop_1;
+#X msg 141 -349 text 1B mode;
+#X msg 229 -349 text 2B mode;
+#X text 124 -442 Change the text of the label depending on the game
+mode;
+#X obj 38 -481 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 523 -466 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 237 -394 Receives from game modes subpatches;
+#X msg 156 -205 40;
+#X obj 123 -308 translateXYZ -2.6 -1.8 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 0;
+#X connect 7 0 6 0;
+#X connect 8 0 4 0;
+#X connect 9 0 12 0;
+#X connect 10 0 24 0;
+#X connect 10 0 11 0;
+#X connect 10 0 7 0;
+#X connect 11 0 9 0;
+#X connect 11 0 13 0;
+#X connect 12 0 4 0;
+#X connect 13 0 4 0;
+#X connect 14 0 16 0;
+#X connect 15 0 17 0;
+#X connect 16 0 8 0;
+#X connect 17 0 5 0;
+#X connect 24 0 4 0;
+#X connect 25 0 40 0;
+#X connect 26 0 27 0;
+#X connect 28 0 26 0;
+#X connect 29 0 33 0;
+#X connect 29 0 28 0;
+#X connect 29 0 39 0;
+#X connect 31 0 33 0;
+#X connect 32 0 34 0;
+#X connect 33 0 27 0;
+#X connect 34 0 27 0;
+#X connect 36 0 37 0;
+#X connect 39 0 27 1;
+#X connect 40 0 27 0;
+#X restore 490 346 pd Settings;
+#N canvas 25 27 1645 894 Controls 0;
+#X obj 9 303 cnv 15 1350 300 empty empty Second_Level 20 12 0 14 -204800
+-258113 0;
+#X obj 9 -252 cnv 15 1350 550 empty empty First_Level 20 12 0 14 -204786
+-258113 0;
+#X obj 1365 -253 cnv 15 800 600 empty empty Control_UI_elements 20
+12 0 14 -261682 -258113 0;
+#X obj 427 -101 ctlin 23 1;
+#X floatatom 428 -37 5 0 0 0 - - -;
+#X msg 428 100 1;
+#X msg 461 100 2;
+#X obj 348 60 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 422 60 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 348 36 sel 1;
+#X obj 422 36 sel 1;
+#X msg 496 -76 1;
+#X msg 535 -76 0;
+#X obj 427 -58 spigot 1;
+#X obj 937 199 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 904 175 gate 2;
+#X msg 904 -28 bang;
+#X obj 904 4 timer;
+#X floatatom 904 28 0 0 0 0 - - -;
+#X obj 904 -53 pipe 1;
+#X obj 904 84 route 1;
+#X obj 989 -53 metro;
+#X msg 904 116 2;
+#X msg 943 117 1;
+#X text 958 198 Back;
+#X text 848 197 Forward;
+#X obj 931 -96 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 998 -150 r c_Button;
+#X msg 1067 -130 1;
+#X msg 1106 -130 0;
+#X obj 904 56 < 350;
+#X obj 989 -28 counter 355;
+#X obj 904 199 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 937 219 s Stop;
+#X obj 600 -147 r Start;
+#X obj 998 -113 spigot 1;
+#X obj 989 219 s Close_GEM;
+#X obj 992 148 loadbang;
+#X obj 348 -13 >= 0;
+#X obj 348 11 &&;
+#X obj 422 12 &&;
+#X obj 494 12 &&;
+#X obj 494 60 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 494 36 sel 1;
+#X msg 494 100 3;
+#X floatatom 525 133 5 0 0 0 - - -;
+#X obj 1067 -154 r back_1;
+#X obj 496 -101 r back_1;
+#X obj 1125 -154 r forw_1;
+#X obj 553 -101 r forw_1;
+#X obj 388 -13 < 28;
+#X obj 422 -12 >= 28;
+#X obj 462 -12 < 56;
+#X obj 494 -11 >= 56;
+#X obj 534 -12 < 84;
+#X obj 571 12 &&;
+#X obj 571 60 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 571 36 sel 1;
+#X obj 571 -11 >= 84;
+#X obj 611 -12 < 106;
+#X obj 650 11 &&;
+#X obj 650 59 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 650 35 sel 1;
+#X obj 650 -12 >= 106;
+#X obj 693 -12 <= 126;
+#X msg 527 100 4;
+#X msg 559 100 5;
+#X text 989 173 One click confirm the potentiometer selection \; two
+clicks close the GEM game window and stop the game;
+#X text 390 -156 When game start "c_Button" and \; the potentiometer
+are operative \; spigot (switch on/off) is open;
+#X obj 1399 109 gemhead;
+#X obj 1400 306 circle;
+#X obj 1400 234 scale 0.1 1 1 1;
+#X obj 1400 201 translateXYZ -3 0.5 0;
+#X msg 1437 156 0 -3 0.5 0;
+#X msg 1515 156 0 -3 -1 0;
+#X msg 1585 156 0 3.7 1.7;
+#X obj 1540 -68 pipe 1;
+#X obj 1507 -97 r Settings_sel;
+#X obj 1507 -43 gate 5;
+#X msg 1731 38 1;
+#X msg 1770 38 0;
+#X obj 1731 -67 gate 2;
+#X obj 1658 56 spigot 1;
+#X msg 1928 38 1;
+#X msg 1967 38 0;
+#X obj 1658 118 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1697 118 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1658 88 route 1;
+#X obj 1862 118 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1901 118 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1862 89 route 1;
+#X obj 1862 56 spigot 0;
+#X obj 1764 -96 pipe 1;
+#X msg 1714 -1 1;
+#X msg 1797 -1 2;
+#X msg 1658 156 0 1.5 -2.1;
+#X msg 1747 157 0 -1.5 -2.1;
+#X text 1498 -195 This GEM circle object gives the user \; a real-time
+visual feedback \; highlighting which setting he is choosing \; while
+rotating the potentiometer;
+#X obj 876 474 r c_Button;
+#X msg 945 494 1;
+#X msg 984 494 0;
+#X obj 945 435 == 4;
+#X obj 945 465 route 1;
+#X obj 876 517 spigot;
+#X obj 1070 459 r c_Button;
+#X msg 1139 479 1;
+#X msg 1178 479 0;
+#X obj 1139 450 route 1;
+#X obj 1070 502 spigot;
+#X obj 1139 420 == 5;
+#X obj 1070 531 s mute_sec;
+#X obj 876 546 s mute_main;
+#X obj 1400 282 color 1 1 1;
+#X msg 1416 259 1 1 1;
+#X msg 1459 260 0 0.8 0.85;
+#X obj 1568 234 r forw_1;
+#X obj 1508 234 r back_1;
+#X text 1563 255 It changes colour when the user confirm the setting
+he wants to select \, to give him a visual cue that know he is changing
+the proprieties of that specific setting;
+#N canvas 190 42 1186 829 Choose_Polyrhythm 0;
+#X obj 8 -241 cnv 15 1150 820 empty empty Second_Level_Setting 20 12
+0 14 -204800 -258113 0;
+#X obj 785 243 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 706 217 gate 2;
+#X msg 706 14 bang;
+#X obj 706 46 timer;
+#X floatatom 706 70 0 0 0 0 - - -;
+#X obj 706 -11 pipe 1;
+#X obj 706 126 route 1;
+#X obj 791 -11 metro;
+#X msg 706 158 2;
+#X msg 745 159 1;
+#X text 758 217 Back;
+#X text 757 65 Time between clicks \; controls message sent;
+#X obj 733 -54 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 800 -108 r c_Button;
+#X obj 800 -71 spigot;
+#X msg 869 -88 1;
+#X msg 908 -88 0;
+#X obj 706 98 < 350;
+#X obj 791 14 counter 355;
+#X obj 392 -130 ctlin 23 1;
+#X obj 392 -88 spigot;
+#X msg 461 -105 1;
+#X msg 500 -105 0;
+#X obj 392 390 sel 1;
+#X obj 392 417 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 392 437 1;
+#X obj 538 390 sel 1;
+#X obj 538 417 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 653 482 5 0 0 0 - - -;
+#X obj 466 390 sel 1;
+#X obj 466 415 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 466 436 2;
+#X floatatom 392 298 5 0 0 0 - - -;
+#X obj 612 390 sel 1;
+#X obj 612 417 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 758 389 sel 1;
+#X obj 758 416 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 684 390 sel 1;
+#X obj 684 415 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 915 389 sel 1;
+#X obj 915 416 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 836 389 sel 1;
+#X obj 836 414 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 538 437 3;
+#X msg 612 437 4;
+#X msg 684 436 5;
+#X msg 758 436 6;
+#X msg 836 435 7;
+#X msg 915 436 8;
+#X obj 392 324 >= 0;
+#X obj 392 348 &&;
+#X obj 466 349 &&;
+#X obj 538 349 &&;
+#X obj 612 349 &&;
+#X obj 684 349 &&;
+#X obj 758 349 &&;
+#X obj 836 350 &&;
+#X obj 915 350 &&;
+#X obj 432 324 < 16;
+#X obj 466 325 >= 16;
+#X obj 506 325 < 32;
+#X obj 538 325 >= 32;
+#X obj 578 325 < 48;
+#X obj 612 325 >= 48;
+#X obj 652 325 < 64;
+#X obj 684 325 >= 64;
+#X obj 724 325 < 80;
+#X obj 758 325 >= 80;
+#X obj 798 325 < 96;
+#X obj 836 326 >= 96;
+#X obj 876 326 < 112;
+#X obj 915 326 >= 112;
+#X obj 965 326 < 126;
+#X obj 392 546 s PolyRatio_sel;
+#X obj 706 242 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 392 498 f;
+#X obj 607 191 loadbang;
+#X obj 334 388 loadbang;
+#X obj 607 215 pipe 1;
+#X obj 653 510 s PolyRatio_drawSel;
+#X obj 500 -82 s back_1;
+#X obj 908 -62 s back_1;
+#X obj 461 -60 s forw_1;
+#X obj 869 -41 s forw_1;
+#X obj 637 257 s bang_bpm;
+#X obj 616 -213 inlet;
+#X text 26 -192 Spigot objects receive bang from the gate in "First_Level"
+\; they enable the control of the following setting features \; (with
+the potentiometer and "c_Button") \, \; thus disabling the controls
+in the "First_Level". \; When the user goes back with a double click
+of "c_Button" \, the controls are disabled in the current level and
+gets re-enabled in the main one/"First_Level".;
+#X text 798 197 One click confirm the potentiometer selection \; two
+clicks go back to "First_Level" selection;
+#X text 655 219 Confirm;
+#X text 84 327 The if statements takes different range of values \;
+of the potentiometer and assigns to each a message \; that will be
+banged when "c" Button is pressed;
+#X text 102 475 The send on the left sends the message \; only when
+the user confirm. \; The one on the right sends the message \; every
+time the potentiometer values change \; between the options. \; It
+sends the message to "Polyrhythm_Selection" \; subpatch in "Settings"
+subpatch;
+#X connect 1 0 17 0;
+#X connect 1 0 23 0;
+#X connect 2 0 75 0;
+#X connect 2 1 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 18 0;
+#X connect 6 0 3 0;
+#X connect 7 0 9 0;
+#X connect 7 1 10 0;
+#X connect 8 0 19 0;
+#X connect 9 0 2 0;
+#X connect 10 0 2 0;
+#X connect 13 0 6 0;
+#X connect 13 0 4 1;
+#X connect 13 0 8 0;
+#X connect 14 0 15 0;
+#X connect 15 0 13 0;
+#X connect 16 0 15 1;
+#X connect 16 0 84 0;
+#X connect 17 0 15 1;
+#X connect 17 0 82 0;
+#X connect 18 0 7 0;
+#X connect 19 2 8 0;
+#X connect 19 2 2 1;
+#X connect 20 0 21 0;
+#X connect 21 0 33 0;
+#X connect 22 0 21 1;
+#X connect 22 0 83 0;
+#X connect 23 0 21 1;
+#X connect 23 0 81 0;
+#X connect 24 0 25 0;
+#X connect 25 0 26 0;
+#X connect 26 0 29 0;
+#X connect 27 0 28 0;
+#X connect 28 0 44 0;
+#X connect 29 0 76 1;
+#X connect 29 0 80 0;
+#X connect 30 0 31 0;
+#X connect 31 0 32 0;
+#X connect 32 0 29 0;
+#X connect 33 0 50 0;
+#X connect 33 0 59 0;
+#X connect 33 0 60 0;
+#X connect 33 0 61 0;
+#X connect 33 0 62 0;
+#X connect 33 0 63 0;
+#X connect 33 0 64 0;
+#X connect 33 0 65 0;
+#X connect 33 0 66 0;
+#X connect 33 0 67 0;
+#X connect 33 0 68 0;
+#X connect 33 0 69 0;
+#X connect 33 0 70 0;
+#X connect 33 0 71 0;
+#X connect 33 0 72 0;
+#X connect 33 0 73 0;
+#X connect 34 0 35 0;
+#X connect 35 0 45 0;
+#X connect 36 0 37 0;
+#X connect 37 0 47 0;
+#X connect 38 0 39 0;
+#X connect 39 0 46 0;
+#X connect 40 0 41 0;
+#X connect 41 0 49 0;
+#X connect 42 0 43 0;
+#X connect 43 0 48 0;
+#X connect 44 0 29 0;
+#X connect 45 0 29 0;
+#X connect 46 0 29 0;
+#X connect 47 0 29 0;
+#X connect 48 0 29 0;
+#X connect 49 0 29 0;
+#X connect 50 0 51 0;
+#X connect 51 0 24 0;
+#X connect 52 0 30 0;
+#X connect 53 0 27 0;
+#X connect 54 0 34 0;
+#X connect 55 0 38 0;
+#X connect 56 0 36 0;
+#X connect 57 0 42 0;
+#X connect 58 0 40 0;
+#X connect 59 0 51 1;
+#X connect 60 0 52 0;
+#X connect 61 0 52 1;
+#X connect 62 0 53 0;
+#X connect 63 0 53 1;
+#X connect 64 0 54 0;
+#X connect 65 0 54 1;
+#X connect 66 0 55 0;
+#X connect 67 0 55 1;
+#X connect 68 0 56 0;
+#X connect 69 0 56 1;
+#X connect 70 0 57 0;
+#X connect 71 0 57 1;
+#X connect 72 0 58 0;
+#X connect 73 0 58 1;
+#X connect 75 0 76 0;
+#X connect 75 0 85 0;
+#X connect 76 0 74 0;
+#X connect 77 0 79 0;
+#X connect 78 0 26 0;
+#X connect 79 0 75 0;
+#X connect 86 0 22 0;
+#X connect 86 0 16 0;
+#X restore 644 476 pd Choose_Polyrhythm;
+#X obj 525 253 s Settings_sel;
+#X obj 418 132 gate 5;
+#X text 974 30 If within 355ms there are 2 consecutve bangs \; (two
+"c_Button" clicks) \; it sends a different message;
+#X text 983 107 Message controls \; gate outlet opening;
+#X text 115 108 Message controls gate outlet opening. \; It is organised
+as a tree diagram \; each branch represent one controllable setting
+;
+#X text 36 10 The if statements takes different range of values \;
+of the potentiometer and assigns to each a message \; that will be
+banged when "c_Button" is pressed;
+#X text 328 193 -User chooses a setting to control with potentiometer
+and confirm clicking "c_Button" \;;
+#X text 823 560 Sends the message to "Metronome" \; subpatch in "Settings"
+subpatch;
+#X text 1051 546 Sends the message to "Metronome" \; subpatch in "Settings"
+subpatch;
+#X text 1382 -117 Receives from "First_Level" \; settings selector
+;
+#X text 93 -218 Control the Navigation through multiple settings \;
+with one potentiometer and a button ("c_Button");
+#N canvas 436 36 1221 558 Choose_main_rhythm_beat_bpm 0;
+#X obj 11 -103 cnv 15 1200 550 empty empty Second_Level_Setting 20
+12 0 14 -204800 -258113 0;
+#X obj 741 375 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 708 352 gate 2;
+#X msg 708 149 bang;
+#X obj 708 181 timer;
+#X floatatom 708 205 0 0 0 0 - - -;
+#X obj 708 124 pipe 1;
+#X obj 708 261 route 1;
+#X obj 793 124 metro;
+#X msg 708 293 2;
+#X msg 747 294 1;
+#X text 760 352 Back;
+#X text 755 207 Time between clicks \; controls message sent;
+#X obj 735 81 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 802 27 r c_Button;
+#X obj 802 64 spigot;
+#X msg 871 47 1;
+#X msg 910 47 0;
+#X obj 405 25 ctlin 23 1;
+#X obj 405 67 spigot;
+#X msg 474 50 1;
+#X msg 513 50 0;
+#X floatatom 405 137 5 0 0 0 - - -;
+#X obj 708 233 < 350;
+#X obj 793 149 counter 355;
+#X obj 363 257 s BPM;
+#X obj 708 376 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 346 120 500;
+#X obj 363 232 int;
+#X obj 363 203 + 0.499999;
+#X obj 431 233 int;
+#X obj 431 203 + 0.499999;
+#X obj 431 281 s BPM_text;
+#X floatatom 508 258 5 0 0 0 - - -;
+#X obj 508 233 f;
+#X obj 520 197 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 431 257 pipe 2;
+#X obj 513 72 s back_1;
+#X obj 910 72 s back_1;
+#X obj 474 93 s forw_1;
+#X obj 871 94 s forw_1;
+#X text 455 136 Function that scales \; potentiometer values;
+#X text 298 173 bpm value rounded up;
+#X obj 346 93 r Start;
+#X text 238 76 When game starts \, \; the bpm is set;
+#X obj 293 204 r bang_bpm;
+#X obj 346 142 pipe 1;
+#X obj 634 -66 inlet;
+#X text 848 -68 Spigot objects receive bang from the gate in "First_Level"
+\; they enable the controls of the following setting features \; (with
+the potentiometer and "c_Button") \, \; thus disabling the controls
+in the "First_Level". \; When the user goes back with a double click
+of "c_Button" \, the controls are disabled in the current level and
+gets re-enabled in the main one/"First_Level".;
+#X text 657 354 Confirm;
+#X text 777 314 One click confirm the potentiometer selection \; two
+clicks go back to "First_Level" selection;
+#X text 344 332 The send on the left sends the message \; only when
+the user confirm. \; The one on the right sends the message \; every
+time the potentiometer values change \; showing the bpm changing in
+real time. \; It sends the message to "Metronome" subpatch \; in "Settings"
+subpatch;
+#X text 217 285 The int object on the right \; outputs the message
+when the user \; goes back to the previous level \;;
+#X text 22 231 The int object on the left outputs the number \; when
+the user confirm the setting chosen \; and stores the number in the
+int object on the right.;
+#X obj 405 116 maxlib/scale 0 126 200 1500 0;
+#X text 178 -61 Choose bpm of the main rhythm beat \; Ex. on 3:2 polyrhythm
+\, 3 is the main.;
+#X connect 1 0 17 0;
+#X connect 1 0 21 0;
+#X connect 1 0 34 0;
+#X connect 2 0 26 0;
+#X connect 2 1 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 23 0;
+#X connect 6 0 3 0;
+#X connect 7 0 9 0;
+#X connect 7 1 10 0;
+#X connect 8 0 24 0;
+#X connect 9 0 2 0;
+#X connect 10 0 2 0;
+#X connect 13 0 6 0;
+#X connect 13 0 4 1;
+#X connect 13 0 8 0;
+#X connect 14 0 15 0;
+#X connect 15 0 13 0;
+#X connect 16 0 15 1;
+#X connect 16 0 40 0;
+#X connect 17 0 15 1;
+#X connect 17 0 38 0;
+#X connect 18 0 19 0;
+#X connect 19 0 54 0;
+#X connect 20 0 19 1;
+#X connect 20 0 39 0;
+#X connect 21 0 19 1;
+#X connect 21 0 37 0;
+#X connect 22 0 29 0;
+#X connect 22 0 31 0;
+#X connect 23 0 7 0;
+#X connect 24 2 8 0;
+#X connect 24 2 2 1;
+#X connect 26 0 28 0;
+#X connect 27 0 22 0;
+#X connect 27 0 46 0;
+#X connect 28 0 25 0;
+#X connect 28 0 34 1;
+#X connect 29 0 28 1;
+#X connect 30 0 36 0;
+#X connect 31 0 30 0;
+#X connect 34 0 33 0;
+#X connect 34 0 32 0;
+#X connect 35 0 34 0;
+#X connect 36 0 32 0;
+#X connect 43 0 27 0;
+#X connect 45 0 28 0;
+#X connect 46 0 28 0;
+#X connect 47 0 20 0;
+#X connect 47 0 16 0;
+#X connect 54 0 22 0;
+#X restore 328 456 pd Choose_main_rhythm_beat_bpm;
+#X text 875 414 Mute main rhythm beat;
+#X text 1054 397 Mute secondary rhythm beat;
+#X text 1816 -75 If the beats are inverted \, all the related controls
+are inverted according to their visual representation. \; (Ex. if beats
+are inverted \, gate output 4 picks 5th option and gate output 5 picks
+4th option);
+#N canvas 344 409 1037 590 Invert_Rhythm_Beats 0;
+#X obj 19 10 cnv 15 1000 550 empty empty Second_Level_Setting 20 12
+0 14 -204800 -258113 0;
+#X obj 37 119 ctlin 23 1;
+#X floatatom 38 183 5 0 0 0 - - -;
+#X msg 38 290 1;
+#X msg 71 290 2;
+#X obj 38 260 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 78 260 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 38 236 sel 1;
+#X obj 78 236 sel 1;
+#X msg 106 144 1;
+#X msg 145 144 0;
+#X obj 527 482 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 494 458 gate 2;
+#X msg 494 255 bang;
+#X obj 494 287 timer;
+#X floatatom 494 311 0 0 0 0 - - -;
+#X obj 494 230 pipe 1;
+#X obj 494 367 route 1;
+#X obj 579 230 metro;
+#X msg 494 399 2;
+#X msg 533 400 1;
+#X text 541 459 Back;
+#X obj 521 187 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 588 133 r c_Button;
+#X msg 657 153 1;
+#X msg 696 153 0;
+#X obj 494 339 < 350;
+#X obj 579 255 counter 355;
+#X obj 494 482 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 562 431 loadbang;
+#X obj 38 345 f;
+#X obj 84 345 f;
+#X floatatom 38 317 5 0 0 0 - - -;
+#X obj 37 162 spigot;
+#X obj 588 170 spigot;
+#X obj 145 167 s back_1;
+#X obj 696 181 s back_1;
+#X obj 106 186 s forw_1;
+#X obj 657 202 s forw_1;
+#X obj 38 207 < 45;
+#X obj 78 207 >= 45;
+#X text 118 211 The user choose between two options \; while rotating
+the potentiometer \;;
+#X obj 553 48 inlet;
+#X text 654 33 Spigot objects receive bang from the gate in "First_Level"
+\; they enable the controls of the following setting features \; (with
+the potentiometer and "c_Button") \, \; thus disabling the controls
+in the "First_Level". \; When the user goes back with a double click
+of "c_Button" \, the controls are disabled in the current level and
+gets re-enabled in the main one/"First_Level".;
+#X text 443 458 Confirm;
+#X text 568 387 One click confirm the potentiometer selection \; two
+clicks go back to "First_Level" selection;
+#X text 94 453 The send on the left sends the message \; only when
+the user confirm. \; The one on the right sends the message \; every
+time the potentiometer values change \; between the options. \; It
+sends the message to "Buttons_Routing" subpatch \; in "Settings" subpatch
+;
+#X text 100 296 The float object on the left outputs the number \;
+when the user confirm the setting chosen \; and stores the message
+in the right float object.;
+#X text 126 345 The float object on the right \; outputs the number
+when the user \; goes back to the previous level \;;
+#X text 52 46 The user can invert the rhythm beats \; to play the polyrhythm
+with the opposite configuration \, without crossing the arms (Ex:3:2
+becomes a 2:3);
+#X obj 38 433 s Beat_Sel;
+#X obj 84 400 s Beat_drawSel;
+#X connect 1 0 33 0;
+#X connect 2 0 39 0;
+#X connect 2 0 40 0;
+#X connect 3 0 32 0;
+#X connect 4 0 32 0;
+#X connect 5 0 3 0;
+#X connect 6 0 4 0;
+#X connect 7 0 5 0;
+#X connect 8 0 6 0;
+#X connect 9 0 33 1;
+#X connect 9 0 37 0;
+#X connect 10 0 33 1;
+#X connect 10 0 35 0;
+#X connect 11 0 25 0;
+#X connect 11 0 10 0;
+#X connect 11 0 31 0;
+#X connect 12 0 28 0;
+#X connect 12 1 11 0;
+#X connect 13 0 14 0;
+#X connect 14 0 15 0;
+#X connect 15 0 26 0;
+#X connect 16 0 13 0;
+#X connect 17 0 19 0;
+#X connect 17 1 20 0;
+#X connect 18 0 27 0;
+#X connect 19 0 12 0;
+#X connect 20 0 12 0;
+#X connect 22 0 16 0;
+#X connect 22 0 14 1;
+#X connect 22 0 18 0;
+#X connect 23 0 34 0;
+#X connect 24 0 34 1;
+#X connect 24 0 38 0;
+#X connect 25 0 34 1;
+#X connect 25 0 36 0;
+#X connect 26 0 17 0;
+#X connect 27 2 18 0;
+#X connect 27 2 12 1;
+#X connect 28 0 30 0;
+#X connect 29 0 11 0;
+#X connect 30 0 31 1;
+#X connect 30 0 50 0;
+#X connect 31 0 51 0;
+#X connect 32 0 30 1;
+#X connect 32 0 51 0;
+#X connect 33 0 2 0;
+#X connect 34 0 22 0;
+#X connect 39 0 7 0;
+#X connect 40 0 8 0;
+#X connect 42 0 9 0;
+#X connect 42 0 24 0;
+#X restore 136 398 pd Invert_Rhythm_Beats;
+#X text 1812 -130 Receives from "Invert Rhythm Beats" \; subpatch in
+"Second_Level";
+#X obj 1731 -120 r Beat_Sel;
+#X connect 3 0 13 0;
+#X connect 4 0 38 0;
+#X connect 4 0 50 0;
+#X connect 4 0 51 0;
+#X connect 4 0 52 0;
+#X connect 4 0 53 0;
+#X connect 4 0 54 0;
+#X connect 4 0 58 0;
+#X connect 4 0 59 0;
+#X connect 4 0 63 0;
+#X connect 4 0 64 0;
+#X connect 5 0 45 0;
+#X connect 5 0 120 0;
+#X connect 6 0 45 0;
+#X connect 6 0 120 0;
+#X connect 7 0 5 0;
+#X connect 8 0 6 0;
+#X connect 9 0 7 0;
+#X connect 10 0 8 0;
+#X connect 11 0 13 1;
+#X connect 12 0 13 1;
+#X connect 13 0 4 0;
+#X connect 14 0 29 0;
+#X connect 14 0 12 0;
+#X connect 14 0 33 0;
+#X connect 14 0 36 0;
+#X connect 15 0 32 0;
+#X connect 15 1 14 0;
+#X connect 16 0 17 0;
+#X connect 17 0 18 0;
+#X connect 18 0 30 0;
+#X connect 19 0 16 0;
+#X connect 20 0 22 0;
+#X connect 20 1 23 0;
+#X connect 21 0 31 0;
+#X connect 22 0 15 0;
+#X connect 23 0 15 0;
+#X connect 26 0 19 0;
+#X connect 26 0 17 1;
+#X connect 26 0 21 0;
+#X connect 27 0 35 0;
+#X connect 28 0 35 1;
+#X connect 29 0 35 1;
+#X connect 30 0 20 0;
+#X connect 31 2 21 0;
+#X connect 31 2 15 1;
+#X connect 32 0 120 1;
+#X connect 34 0 11 0;
+#X connect 34 0 28 0;
+#X connect 35 0 26 0;
+#X connect 37 0 14 0;
+#X connect 38 0 39 0;
+#X connect 39 0 9 0;
+#X connect 40 0 10 0;
+#X connect 41 0 43 0;
+#X connect 42 0 44 0;
+#X connect 43 0 42 0;
+#X connect 44 0 45 0;
+#X connect 44 0 120 0;
+#X connect 45 0 101 0;
+#X connect 45 0 109 0;
+#X connect 45 0 119 0;
+#X connect 46 0 28 0;
+#X connect 47 0 11 0;
+#X connect 48 0 29 0;
+#X connect 49 0 12 0;
+#X connect 50 0 39 1;
+#X connect 51 0 40 0;
+#X connect 52 0 40 1;
+#X connect 53 0 41 0;
+#X connect 54 0 41 1;
+#X connect 55 0 57 0;
+#X connect 56 0 65 0;
+#X connect 57 0 56 0;
+#X connect 58 0 55 0;
+#X connect 59 0 55 1;
+#X connect 60 0 62 0;
+#X connect 61 0 66 0;
+#X connect 62 0 61 0;
+#X connect 63 0 60 0;
+#X connect 64 0 60 1;
+#X connect 65 0 45 0;
+#X connect 65 0 120 0;
+#X connect 66 0 45 0;
+#X connect 66 0 120 0;
+#X connect 69 0 72 0;
+#X connect 71 0 112 0;
+#X connect 72 0 71 0;
+#X connect 73 0 72 0;
+#X connect 74 0 72 0;
+#X connect 75 0 72 0;
+#X connect 76 0 78 1;
+#X connect 77 0 76 0;
+#X connect 77 0 78 0;
+#X connect 78 0 73 0;
+#X connect 78 1 74 0;
+#X connect 78 2 75 0;
+#X connect 78 3 93 0;
+#X connect 78 4 94 0;
+#X connect 79 0 82 1;
+#X connect 79 0 84 0;
+#X connect 80 0 82 1;
+#X connect 81 0 79 0;
+#X connect 81 1 83 0;
+#X connect 82 0 87 0;
+#X connect 83 0 80 0;
+#X connect 83 0 91 1;
+#X connect 84 0 91 1;
+#X connect 85 0 95 0;
+#X connect 86 0 96 0;
+#X connect 87 0 85 0;
+#X connect 87 1 86 0;
+#X connect 88 0 95 0;
+#X connect 89 0 96 0;
+#X connect 90 0 89 0;
+#X connect 90 1 88 0;
+#X connect 91 0 90 0;
+#X connect 92 0 81 1;
+#X connect 93 0 82 0;
+#X connect 93 0 91 0;
+#X connect 94 0 82 0;
+#X connect 94 0 91 0;
+#X connect 95 0 72 0;
+#X connect 96 0 72 0;
+#X connect 98 0 103 0;
+#X connect 99 0 103 1;
+#X connect 100 0 103 1;
+#X connect 101 0 102 0;
+#X connect 102 0 99 0;
+#X connect 102 1 100 0;
+#X connect 103 0 111 0;
+#X connect 104 0 108 0;
+#X connect 105 0 108 1;
+#X connect 106 0 108 1;
+#X connect 107 0 105 0;
+#X connect 107 1 106 0;
+#X connect 108 0 110 0;
+#X connect 109 0 107 0;
+#X connect 112 0 70 0;
+#X connect 113 0 112 1;
+#X connect 114 0 112 1;
+#X connect 115 0 114 0;
+#X connect 116 0 113 0;
+#X connect 120 0 134 0;
+#X connect 120 1 130 0;
+#X connect 120 2 118 0;
+#X connect 136 0 92 0;
+#X connect 136 0 81 0;
+#X restore 490 318 pd Controls;
+#N canvas 156 23 1337 1005 1_Button 0;
+#X obj 16 -263 cnv 15 1300 1400 empty empty Mode_1_Button 20 12 0 14
+-204800 -258113 0;
+#X obj 605 142 bng 15 250 50 0 empty empty empty 0 -6 0 8 -4032 -1
+-1;
+#X msg 632 390 bang;
+#X obj 605 425 timer;
+#X obj 605 121 metro;
+#X text 274 -246 Start;
+#X floatatom 566 498 5 0 0 0 - - -;
+#X obj 301 -224 bng 15 250 50 0 empty Start_game1 empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 526 -88 6 0 0 0 - - -;
+#X obj 478 142 bng 15 250 50 0 empty empty empty 0 -6 0 8 -258113 -1
+-1;
+#X obj 478 121 metro;
+#X msg 505 390 bang;
+#X obj 478 425 timer;
+#X floatatom 439 499 5 0 0 0 - - -;
+#X floatatom 478 637 5 0 0 0 - - -;
+#X obj 486 521 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 605 521 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 478 809 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 517 810 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 478 831 inc;
+#X obj 511 849 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 530 849 Reset;
+#X obj 478 499 < 300;
+#X obj 605 499 < 300;
+#X obj 478 676 sel 1;
+#X obj 419 1007 s Points;
+#X obj 563 877 s PointReset;
+#X obj 127 767 s PointCol;
+#X floatatom 79 653 7 0 0 0 - - -;
+#X floatatom 127 654 7 0 0 0 - - -;
+#X msg 235 -3 stop;
+#X obj 478 982 counter 1 5;
+#X floatatom 478 1009 10 0 0 0 - - -;
+#X floatatom 478 913 10 0 0 0 - - -;
+#X obj 567 -155 r BPM;
+#X obj 478 1036 sel 5;
+#X obj 478 1060 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 526 -25 t b;
+#X obj 235 -37 r Stop;
+#X obj 184 -209 s Start;
+#X msg 497 -88 500;
+#X obj 567 -127 spigot;
+#X msg 627 -147 0;
+#X msg 659 -147 1;
+#X obj 557 303 spigot;
+#X msg 567 277 0;
+#X msg 599 277 1;
+#X obj 557 366 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 596 366 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 557 327 route 1;
+#X msg 557 221 1;
+#X msg 596 221 2;
+#X obj 436 142 s main;
+#X obj 569 142 s sec;
+#X obj 534 195 r pl_main;
+#X obj 596 195 r pl_sec;
+#X obj 632 95 r BPM_sec;
+#X obj 578 -72 s BPM_main;
+#X text 666 184 Player button bangs;
+#X text 509 -111 BPM(ms);
+#X text 579 -97 BPM controls metro objects;
+#X text 645 494 If small delay between \; rhythm and player input return
+1;
+#X text 550 1022 When the user collects 5 consecutive points in a row
+\, without errors \, he earns a cumulative point that demonstrates
+his good understanding of the current polyrhythm.;
+#X obj 478 1087 s TotPoints;
+#X msg 435 576 0;
+#X msg 79 825 999;
+#X text 114 799 High values sent \; represent bad accuracy;
+#X text 534 807 Bad accuracy \; resets the counter;
+#X text 342 811 Good accuracy \; increments counter +1;
+#X obj 184 -182 s Stop_2;
+#X obj 627 -179 r Stop_1;
+#X obj 478 617 ||;
+#X obj 478 890 counter 1 4;
+#X obj 478 948 sel 4;
+#X obj 567 249 r Stop_1;
+#N canvas 0 23 630 545 delay_threshold_main 0;
+#X obj 49 24 cnv 15 500 500 empty empty empty 20 12 0 14 -204800 -258113
+0;
+#X obj 158 470 outlet;
+#X obj 370 176 inlet;
+#X floatatom 171 267 5 0 0 0 - - -;
+#X obj 171 239 + 300;
+#X obj 132 342 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 132 387 metro;
+#X obj 132 310 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 132 441 4 0 0 0 - - -;
+#X obj 280 296 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 132 413 counter;
+#X text 241 317 Player bang resets the counter;
+#X obj 171 179 r BPM_main;
+#X floatatom 184 209 5 0 0 0 - - -;
+#X obj 132 51 r Start;
+#X obj 184 51 r Stop;
+#X text 63 267 Delay Threshold;
+#X text 83 87 Delay threshold between last two user bangs \; Depends
+on the rhythm beat \; It lasts the time of the assigned beat \; plus
+the chosen limit threshold between \; the beat bang and the player
+bang;
+#X text 186 377 If counter object reaches the threshold \, \; it means
+that the user missed the matching \; of the consecutive beat. \; When
+this hsppens \, the counter sends messages that represent a bad accuracy
+\, \; besides it instantly resets the point counter.;
+#X connect 2 0 9 0;
+#X connect 3 0 10 4;
+#X connect 4 0 3 0;
+#X connect 5 0 6 0;
+#X connect 6 0 10 0;
+#X connect 7 0 5 0;
+#X connect 9 0 6 0;
+#X connect 9 0 10 2;
+#X connect 10 0 8 0;
+#X connect 10 2 5 0;
+#X connect 10 2 1 0;
+#X connect 12 0 13 0;
+#X connect 12 0 4 0;
+#X connect 14 0 7 0;
+#X connect 15 0 7 0;
+#X restore 57 452 pd delay_threshold_main;
+#N canvas 701 23 629 497 delay_threshold_sec 0;
+#X obj 63 18 cnv 15 500 450 empty empty empty 20 12 0 14 -204800 -258113
+0;
+#X obj 233 432 outlet;
+#X obj 88 170 inlet;
+#X floatatom 246 234 5 0 0 0 - - -;
+#X obj 246 206 + 300;
+#X obj 207 305 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 207 350 metro;
+#X obj 207 273 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 207 403 4 0 0 0 - - -;
+#X obj 130 243 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 207 377 counter;
+#X floatatom 276 179 5 0 0 0 - - -;
+#X obj 246 149 r BPM_sec;
+#X text 307 235 Delay Threshold;
+#X text 65 221 Player bang resets counter;
+#X obj 153 40 r Start;
+#X obj 207 40 r Stop;
+#X text 211 71 Delay threshold between last two user bangs \; Depends
+on the rhythm beat \; It lasts the time of the assigned beat \; plus
+the chosen limit threshold between \; the beat bang and the player
+bang;
+#X text 256 338 If counter object reaches the threshold \, \; it means
+that the user missed the matching \; of the consecutive beat. \; When
+this hsppens \, the counter sends messages that represent a bad accuracy
+\, \; besides it instantly resets the point counter.;
+#X connect 2 0 9 0;
+#X connect 3 0 10 4;
+#X connect 4 0 3 0;
+#X connect 5 0 6 0;
+#X connect 6 0 10 0;
+#X connect 7 0 5 0;
+#X connect 9 0 6 0;
+#X connect 9 0 10 2;
+#X connect 10 0 8 0;
+#X connect 10 2 5 0;
+#X connect 10 2 1 0;
+#X connect 12 0 4 0;
+#X connect 12 0 11 0;
+#X connect 15 0 7 0;
+#X connect 16 0 7 0;
+#X restore 1090 452 pd delay_threshold_sec;
+#X obj 505 95 r BPM_main;
+#X text 349 -239 The player starts the game: sets the BPM \; starts
+the metro objects \, and enables controls. \; If the game is already
+opened in the 2 Button mode \, it first gets closed;
+#X text 627 249 Stops the acquisition of user inputs \; when he changes
+the gamemode;
+#X text 690 -161 This receive object stop/close this game mode \; if
+the user start the game in the other mode \; while this is still open
+;
+#X text 278 975 The number is sent to the \; "Accuracy_Points" subpatch
+in \; "Settings" subpatch;
+#X text 282 1057 The number is sent to the \; "Comulative_Points" subpatch
+in \; "Settings" subpatch;
+#X text 106 -88 Receives from "First_Level" \; in "Controls" subpatch.
+\; If the user clicks two times "c_Button" \, \; it stops the game
+;
+#X text 516 615 If at least one input receive 1 \, \; it increases
+the counter. \; (It means that if one of the player \; inputs is under
+the threshold \, \; the logic recognise a good accuracy);
+#X text 648 113 Metro objects control the Rhythm beats \; they get
+reset every time bpm changes;
+#X text 641 411 The timer object controls the threshold below which
+\; a point is assigned for the good timing. \; Inputs are the rhythm
+beat bang and the player bang;
+#X text 1030 420 Delay threshold between last two user bangs \; on
+secondary rhythm beat;
+#X text 20 416 Delay threshold between last two user bangs \; on main
+rhythm beat;
+#X text 144 671 The number is sent to control \; the UI real-time visual
+feedback \; for rhythm accuracy. \; It is the output of one of \; the
+two timer objects \; receiving the delay \; between user input and
+rhythm beat;
+#X text 577 -3 BPM of the main rhythm beat is sent \; to "Polyrhthm_Selection"
+subpatch \; in "Settings" subpatch \, and returns \; as the BPM of
+the secondary beat.;
+#X text 677 210 Receives message from "Buttons_Routing" subpatch \;
+in "Settings" subpatch;
+#X text 267 900 Every 4 consecutive \; beats matching it gives a point
+;
+#X obj 605 559 &&;
+#X connect 1 0 3 0;
+#X connect 1 0 53 0;
+#X connect 2 0 3 1;
+#X connect 2 0 76 0;
+#X connect 3 0 23 0;
+#X connect 3 0 29 0;
+#X connect 4 0 1 0;
+#X connect 7 0 10 0;
+#X connect 7 0 4 0;
+#X connect 7 0 39 0;
+#X connect 7 0 37 0;
+#X connect 7 0 43 0;
+#X connect 7 0 46 0;
+#X connect 7 0 40 0;
+#X connect 7 0 69 0;
+#X connect 8 0 37 0;
+#X connect 8 0 57 0;
+#X connect 9 0 12 0;
+#X connect 9 0 52 0;
+#X connect 10 0 9 0;
+#X connect 11 0 12 1;
+#X connect 11 0 75 0;
+#X connect 12 0 22 0;
+#X connect 12 0 28 0;
+#X connect 14 0 24 0;
+#X connect 15 0 71 0;
+#X connect 15 0 93 0;
+#X connect 16 0 71 0;
+#X connect 16 0 93 0;
+#X connect 17 0 19 0;
+#X connect 18 0 20 0;
+#X connect 19 0 72 0;
+#X connect 20 0 26 0;
+#X connect 20 0 31 2;
+#X connect 20 0 65 0;
+#X connect 20 0 65 0;
+#X connect 20 0 65 0;
+#X connect 20 0 72 2;
+#X connect 22 0 13 0;
+#X connect 22 0 15 0;
+#X connect 22 0 71 0;
+#X connect 22 0 93 0;
+#X connect 23 0 6 0;
+#X connect 23 0 16 0;
+#X connect 23 0 71 1;
+#X connect 23 0 93 1;
+#X connect 24 0 17 0;
+#X connect 24 1 18 0;
+#X connect 28 0 27 0;
+#X connect 29 0 27 0;
+#X connect 30 0 10 0;
+#X connect 30 0 4 0;
+#X connect 31 0 32 0;
+#X connect 31 0 25 0;
+#X connect 32 0 35 0;
+#X connect 33 0 73 0;
+#X connect 34 0 41 0;
+#X connect 35 0 36 0;
+#X connect 36 0 63 0;
+#X connect 37 0 10 0;
+#X connect 37 0 4 0;
+#X connect 38 0 30 0;
+#X connect 40 0 8 0;
+#X connect 41 0 8 0;
+#X connect 41 0 37 0;
+#X connect 42 0 41 1;
+#X connect 43 0 41 1;
+#X connect 44 0 49 0;
+#X connect 45 0 44 1;
+#X connect 46 0 44 1;
+#X connect 47 0 11 0;
+#X connect 48 0 2 0;
+#X connect 49 0 47 0;
+#X connect 49 1 48 0;
+#X connect 50 0 44 0;
+#X connect 51 0 44 0;
+#X connect 54 0 50 0;
+#X connect 55 0 51 0;
+#X connect 56 0 4 1;
+#X connect 64 0 71 0;
+#X connect 64 0 71 1;
+#X connect 65 0 28 0;
+#X connect 65 0 29 0;
+#X connect 65 0 28 0;
+#X connect 65 0 29 0;
+#X connect 65 0 28 0;
+#X connect 65 0 29 0;
+#X connect 70 0 42 0;
+#X connect 70 0 30 0;
+#X connect 71 0 14 0;
+#X connect 72 0 33 0;
+#X connect 73 0 31 0;
+#X connect 74 0 45 0;
+#X connect 75 0 64 0;
+#X connect 75 0 65 0;
+#X connect 76 0 65 0;
+#X connect 76 0 64 0;
+#X connect 77 0 10 1;
+#X restore 385 318 pd 1_Button;
+#N canvas 243 23 1360 1005 2_Buttons 0;
+#X obj 34 -302 cnv 15 1300 1400 empty empty Mode_2_Buttons 20 12 0
+14 -203904 -258113 0;
+#X obj 655 104 bng 15 250 50 0 empty empty empty 0 -6 0 8 -4032 -1
+-1;
+#X msg 682 350 bang;
+#X obj 655 385 timer;
+#X obj 655 81 metro;
+#X text 324 -286 Start;
+#X floatatom 616 458 5 0 0 0 - - -;
+#X obj 351 -264 bng 15 250 50 0 empty Start_game2 empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 576 -128 6 0 0 0 - - -;
+#X obj 528 102 bng 15 250 50 0 empty empty empty 0 -6 0 8 -258113 -1
+-1;
+#X obj 528 73 metro;
+#X msg 555 350 bang;
+#X obj 528 385 timer;
+#X floatatom 489 459 5 0 0 0 - - -;
+#X obj 528 577 &&;
+#X floatatom 528 597 5 0 0 0 - - -;
+#X obj 536 481 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 655 481 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 528 769 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 567 770 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 528 791 inc;
+#X obj 561 809 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 580 809 Reset;
+#X obj 528 459 < 300;
+#X obj 655 459 < 300;
+#X obj 528 636 sel 1;
+#X obj 469 967 s Points;
+#X obj 613 837 s PointReset;
+#X obj 202 739 s PointCol;
+#X floatatom 149 613 7 0 0 0 - - -;
+#X floatatom 206 614 7 0 0 0 - - -;
+#X obj 149 678 +;
+#X floatatom 149 740 7 0 0 0 - - -;
+#X obj 149 705 * 0.5;
+#X obj 206 641 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 335 -3 stop;
+#X obj 528 942 counter 1 5;
+#X floatatom 528 969 10 0 0 0 - - -;
+#X floatatom 528 873 10 0 0 0 - - -;
+#X obj 528 850 counter 1 8;
+#X obj 617 -195 r BPM;
+#X obj 528 908 sel 8;
+#X obj 528 996 sel 5;
+#X obj 528 1020 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 576 -65 t b;
+#X obj 335 -37 r Stop;
+#X obj 234 -249 s Start;
+#X msg 547 -128 500;
+#X obj 617 -167 spigot;
+#X msg 677 -187 0;
+#X msg 709 -187 1;
+#X obj 234 -222 s Stop_1;
+#X obj 677 -219 r Stop_2;
+#X obj 607 263 spigot;
+#X msg 617 237 0;
+#X msg 649 237 1;
+#X obj 607 326 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 646 326 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 607 287 route 1;
+#X msg 607 181 1;
+#X msg 646 181 2;
+#X text 740 -201 This receive object stop/close this game mode \; if
+the user start the game in the other mode \; while this is still open
+;
+#X obj 483 102 s main;
+#X obj 618 104 s sec;
+#X obj 584 155 r pl_main;
+#X obj 646 155 r pl_sec;
+#X obj 682 58 r BPM_sec;
+#X obj 628 -112 s BPM_main;
+#X text 729 146 Player button bangs;
+#X text 399 -279 The player starts the game: sets the BPM \; starts
+the metro objects \, and enables controls. \; If the game was already
+opened in the 1 Button mode \, it gets closed;
+#X text 559 -151 BPM(ms);
+#X text 629 -137 BPM controls metro objects;
+#X text 695 454 If small delay between \; rhythm and player input return
+1;
+#X text 600 983 When the user collects 5 consecutive points in a row
+\, without errors \, he earns a cumulative point that demonstrates
+his good understanding of the current polyrhythm.;
+#X obj 528 1047 s TotPoints;
+#X msg 485 540 0;
+#X msg 149 788 999;
+#X text 184 762 High values sent \; represent bad accuracy;
+#X text 584 767 Bad accuracy \; resets the counter;
+#X text 392 771 Good accuracy \; increments counter +1;
+#X obj 617 209 r Stop_2;
+#X text 677 209 Stop the acquisition of user inputs \; when he changes
+the gamemode;
+#N canvas 0 479 630 545 delay_threshold_main 0;
+#X obj 59 23 cnv 15 500 500 empty empty empty 20 12 0 14 -203904 -258113
+0;
+#X obj 158 470 outlet;
+#X obj 370 176 inlet;
+#X floatatom 171 267 5 0 0 0 - - -;
+#X obj 171 239 + 300;
+#X obj 132 342 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 132 387 metro;
+#X obj 132 310 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 132 441 4 0 0 0 - - -;
+#X obj 280 296 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 132 413 counter;
+#X text 241 317 Player bang resets the counter;
+#X text 70 269 Delay Threshold;
+#X obj 171 179 r BPM_main;
+#X floatatom 184 209 5 0 0 0 - - -;
+#X obj 132 51 r Start;
+#X obj 184 51 r Stop;
+#X text 83 87 Delay threshold between last two user bangs \; Depends
+on the rhythm beat \; It lasts the time of the assigned beat \; plus
+the chosen limit threshold between \; the beat bang and the player
+bang;
+#X text 181 385 If counter object reaches the threshold \, \; it means
+that the user missed the matching \; of the consecutive beat. \; When
+this hsppens \, the counter sends messages that represent a bad accuracy
+\, \; besides it instantly resets the point counter.;
+#X connect 2 0 9 0;
+#X connect 3 0 10 4;
+#X connect 4 0 3 0;
+#X connect 5 0 6 0;
+#X connect 6 0 10 0;
+#X connect 7 0 5 0;
+#X connect 9 0 6 0;
+#X connect 9 0 10 2;
+#X connect 10 0 8 0;
+#X connect 10 2 5 0;
+#X connect 10 2 1 0;
+#X connect 13 0 14 0;
+#X connect 13 0 4 0;
+#X connect 15 0 7 0;
+#X connect 16 0 7 0;
+#X restore 78 426 pd delay_threshold_main;
+#N canvas 687 531 657 497 delay_threshold_sec 0;
+#X obj 73 28 cnv 15 500 450 empty empty empty 20 12 0 14 -203904 -258113
+0;
+#X obj 233 432 outlet;
+#X obj 91 160 inlet;
+#X floatatom 246 244 5 0 0 0 - - -;
+#X obj 246 216 + 300;
+#X obj 207 305 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 207 350 metro;
+#X obj 207 273 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 207 403 4 0 0 0 - - -;
+#X obj 140 243 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 207 377 counter;
+#X floatatom 256 189 5 0 0 0 - - -;
+#X obj 246 159 r BPM_sec;
+#X text 285 243 Delay Threshold;
+#X text 74 221 Player bang resets counter;
+#X obj 153 50 r Start;
+#X obj 207 50 r Stop;
+#X text 211 81 Delay threshold between last two user bangs \; Depends
+on the rhythm beat \; It lasts the time of the assigned beat \; plus
+the chosen limit threshold between \; the beat bang and the player
+bang;
+#X text 258 340 If counter object reaches the threshold \, \; it means
+that the user missed the matching \; of the consecutive beat. \; When
+this hsppens \, the counter sends messages that represent a bad accuracy
+\, \; besides it instantly resets the point counter.;
+#X connect 2 0 9 0;
+#X connect 3 0 10 4;
+#X connect 4 0 3 0;
+#X connect 5 0 6 0;
+#X connect 6 0 10 0;
+#X connect 7 0 5 0;
+#X connect 9 0 6 0;
+#X connect 9 0 10 2;
+#X connect 10 0 8 0;
+#X connect 10 2 5 0;
+#X connect 10 2 1 0;
+#X connect 12 0 4 0;
+#X connect 12 0 11 0;
+#X connect 15 0 7 0;
+#X connect 16 0 7 0;
+#X restore 1126 426 pd delay_threshold_sec;
+#X obj 555 49 r BPM_main;
+#X text 206 -88 Receives from "First_Level" \; in "Controls" subpatch.
+\; If the user clicks two times "c_Button" \, \; it stops the game
+;
+#X text 566 575 If both inputs receive 1 \; at the same time \, it
+increase the counter. \; (It means that if both the player inputs \;
+are under the threshold \, \; the logic recognise a good accuracy)
+;
+#X text 328 935 These messages are sent to the \; "Accuracy_Points"
+subpatch in \; "Settings" subpatch;
+#X text 327 1016 These messages are sent to the \; "Comulative_Points"
+subpatch in \; "Settings" subpatch;
+#X text 698 73 Metro objects control the Rhythm beats \; they get reset
+every time bpm changes;
+#X text 317 860 Every 8 consecutive \; beats matching it gives a point
+;
+#X text 691 371 The timer object controls the threshold below which
+\; a point is assigned for the good timing. \; Inputs are the rhythm
+beat bang and the player bang;
+#X text 1066 394 Delay threshold between last two user bangs \; on
+secondary rhythm beat;
+#X text 224 637 The number sents to control \; the UI real-time visual
+feedback \; for rhythm accuracy. \; It is the average of the outputs
+\; of the two timer objects \; receiving the delay \; between user
+inputs and rhythm beats;
+#X text 657 -30 BPM of the main rhythm beat is sent \; to "Polyrhythm_Selection"
+subpatch \; in "Settings" subpatch \, and returns \; as the BPM of
+the secondary beat.;
+#X text 41 390 Delay threshold between last two user bangs \; on main
+rhythm beat;
+#X text 727 170 Receives message from "Buttons_Routing" subpatch \;
+in "Settings" subpatch;
+#X connect 1 0 3 0;
+#X connect 1 0 63 0;
+#X connect 2 0 3 1;
+#X connect 2 0 83 0;
+#X connect 3 0 24 0;
+#X connect 3 0 30 0;
+#X connect 4 0 1 0;
+#X connect 7 0 10 0;
+#X connect 7 0 4 0;
+#X connect 7 0 46 0;
+#X connect 7 0 44 0;
+#X connect 7 0 51 0;
+#X connect 7 0 50 0;
+#X connect 7 0 55 0;
+#X connect 7 0 47 0;
+#X connect 8 0 44 0;
+#X connect 8 0 67 0;
+#X connect 9 0 12 0;
+#X connect 9 0 62 0;
+#X connect 10 0 9 0;
+#X connect 11 0 12 1;
+#X connect 11 0 82 0;
+#X connect 12 0 23 0;
+#X connect 12 0 29 0;
+#X connect 14 0 15 0;
+#X connect 15 0 25 0;
+#X connect 16 0 14 0;
+#X connect 17 0 14 0;
+#X connect 18 0 20 0;
+#X connect 19 0 21 0;
+#X connect 20 0 39 0;
+#X connect 21 0 27 0;
+#X connect 21 0 36 2;
+#X connect 21 0 39 2;
+#X connect 21 0 76 0;
+#X connect 21 0 76 0;
+#X connect 21 0 76 0;
+#X connect 23 0 13 0;
+#X connect 23 0 16 0;
+#X connect 23 0 14 0;
+#X connect 24 0 6 0;
+#X connect 24 0 14 1;
+#X connect 24 0 17 0;
+#X connect 25 0 18 0;
+#X connect 25 1 19 0;
+#X connect 29 0 31 0;
+#X connect 30 0 31 1;
+#X connect 30 0 34 0;
+#X connect 31 0 33 0;
+#X connect 33 0 32 0;
+#X connect 33 0 28 0;
+#X connect 34 0 31 0;
+#X connect 35 0 10 0;
+#X connect 35 0 4 0;
+#X connect 36 0 37 0;
+#X connect 36 0 26 0;
+#X connect 37 0 42 0;
+#X connect 38 0 41 0;
+#X connect 39 0 38 0;
+#X connect 40 0 48 0;
+#X connect 41 0 36 0;
+#X connect 42 0 43 0;
+#X connect 43 0 74 0;
+#X connect 44 0 10 0;
+#X connect 44 0 4 0;
+#X connect 45 0 35 0;
+#X connect 47 0 8 0;
+#X connect 48 0 8 0;
+#X connect 48 0 44 0;
+#X connect 49 0 48 1;
+#X connect 50 0 48 1;
+#X connect 52 0 49 0;
+#X connect 52 0 35 0;
+#X connect 53 0 58 0;
+#X connect 54 0 53 1;
+#X connect 55 0 53 1;
+#X connect 56 0 11 0;
+#X connect 57 0 2 0;
+#X connect 58 0 56 0;
+#X connect 58 1 57 0;
+#X connect 59 0 53 0;
+#X connect 60 0 53 0;
+#X connect 64 0 59 0;
+#X connect 65 0 60 0;
+#X connect 66 0 4 1;
+#X connect 75 0 14 0;
+#X connect 75 0 14 1;
+#X connect 76 0 29 0;
+#X connect 76 0 30 0;
+#X connect 76 0 29 0;
+#X connect 76 0 30 0;
+#X connect 76 0 29 0;
+#X connect 76 0 30 0;
+#X connect 80 0 54 0;
+#X connect 82 0 75 0;
+#X connect 82 0 76 0;
+#X connect 83 0 76 0;
+#X connect 83 0 75 0;
+#X connect 84 0 10 1;
+#X restore 385 346 pd 2_Buttons;
+#X text 387 297 Game modes;
+#X text 357 174 -Change the Polyrhythm: choose the polyrhythm to match
+between 8 options (3:2 \, 4:3 \, 5:4 \, 5:3 \, 5:2 \, 7:4 \, 9:4 \,
+8:7).;
+#X obj -237 -63 cnv 15 405 65 empty empty Feel_the_(poly)Rhythm...
+20 12 0 18 -257596 -26432 0;
+#X obj -359 18 cnv 15 380 350 empty empty Instructions 20 12 0 14 -261682
+-258113 0;
+#X obj 26 19 cnv 15 315 250 empty empty Play! 20 12 0 14 -262130 -258113
+0;
+#X obj 228 97 bng 50 250 50 0 Start_game2 empty 2_Buttons -5 -10 0
+15 -203904 -1 -21887;
+#X obj 62 97 bng 50 250 50 0 Start_game1 empty 1_Button -5 -10 0 15
+-204800 -1 -25983;
+#X text 36 210 -Easy Mode;
+#X text 49 228 For practice;
+#X text 49 241 and training;
+#X text 203 209 -Normal Mode;
+#X text 215 228 Keep the tempo;
+#X text 215 241 and master it;
+#X text 130 110 <-- Press -->;
+#X text 141 148 Game Modes;
+#X obj 167 254 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 167 179 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 167 82 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 167 20 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 215 44 Learn how to cross \; the rhythms!;
+#X text 50 44 Learn to feel \; each rhythm!;
+#X text -348 82 -The user has a potentiometer and 3 physical buttons
+\; (a \, b and c) to play the game and control its settings while playing.
+;
+#X text -348 129 -With Button a (click with right-hand) the user follows
+and try to match the main rhythm beat of the polyrhythm \; with Button
+b (click with left-hand) he follows and matches the secondary rhythm
+beat. (Ex. for a right handed player \, on a 3:2 Polyrhythm \, the
+right hand follows the 3 \, main beat \, and the left one follows the
+2 \, secondary beat.);
+#X text 36 167 -Match one beat \; (One hand mode);
+#X text 203 166 -Match both beats \; (Two hands mode);
+#X text 357 140 -Change BPM(ms): choose the tempo in ms assigned to
+the main rhythm beat \, thus changing the secondary accordingly.;
+#X text -348 289 -After the confirmation of the selected setting \,
+the potentiometer is used to change the properties of the specific
+setting. One click of Button c is used to confirm the property change
+\, and two clicks to go back to the settings choice.;
+#X text 148 123 to Play;
+#X text -204 -32 Before you start \, read the following instructions
+or \; watch the Demonstration video for a tutorial on How to Play;
+#X text 357 68 -Invert Rhythm Beats: invert the buttons associated
+with the rhythm beats \, to play the opposite configuration without
+crossing the hands. \; "b:a" default configuration "secondary:main"
+\; "a:b" inverted configuration "main:secondary";
+#X text 357 210 -Mute Beats: choose which beat to mute and play the
+game with an added difficulty.;
+#X text -348 215 -On the startup \, the potentiometer is used to navigate
+through the various settings (highlighted by the white circle when
+selected). One click of Button c is used to confirm the chosen setting
+whilst two clicks to close the game window and stop the game.;
+#X text -348 48 -The aim of the game is to match the rhythm beats of
+the polyrhythms.;
+#X connect 22 0 21 0;
+#X connect 24 0 23 0;
