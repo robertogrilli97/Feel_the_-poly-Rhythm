@@ -1,5 +1,5 @@
 # Feel the (poly) Rhythm
-Feel the (poly)Rhythm
+
 <!-- wp:paragraph -->
 <p>The sense of rhythm is a fundamental characteristic of every great musician. Improving it is crucial to hone your listening capabilities and overall understanding of music.&nbsp;</p>
 <!-- /wp:paragraph -->
@@ -27,3 +27,7 @@ Feel the (poly)Rhythm
 <!-- wp:paragraph -->
 <p>-The second requires to match both the rhythm beats.<br>It requires more precision and sensitivity to master the feeling of each polyrhythm.</p>
 <!-- /wp:paragraph -->
+
+<!-- /wp:paragraph -->
+<p>-... more on </p>
+<!-- wp:paragraph -->
